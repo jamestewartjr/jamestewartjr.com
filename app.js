@@ -1,15 +1,28 @@
 const express = require('express')
+const path = require('path')
+const app = express()
 
-const router = express()
 
-router.get('/', (request, response) => {
-  response.send('This still is working, but I should probably change this soon. Nodemon added correctly.')
+
+app.get('/', (request, response) => {
+  response.render('landing')
 })
 
-router.listen(2017, () => {
+
+
+
+
+
+app.use( (request, response) => {
+  response.status(404).send('Sorry cannot find that!')
+})
+
+app.set('views', path.join(__dirname, 'views') )
+app.set('view engine', 'pug')
+
+app.set('port', 2017)
+
+app.listen(app.get('port'), () => {
   console.log('The server is listening on 2017')
 })
-
-router.use( (request, response) => {
-  res.status(404).send("Sorry can't find that!")
-})
+app.set(express.static(path.join(__dirname, 'public')))
