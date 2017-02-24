@@ -1,43 +1,43 @@
-const phraseToType = [
+const phrasesToType = [
   'I currently live in the Bay Area.',
   'I am a software developer.',
   'Previously, I was a marketer and entrepreneur.',
   'I enjoy showing information in useful ways.'
 ]
-
-const domNode = document.querySelector('.typing-phrase')
+const domNode = document.querySelector('.type-phrase')
 const pauseDelay = 500
-const phrasesIndex = 0
+
+let phrasesIndex = 0
 let currentValue = ''
-const deletingPhrase = false
+let deletingPhrase = false
 
 const update = () => {
-  debugger
-  let phraseType = phraseToType[phrasesIndex]
+  // debugger
+  let phraseType = phrasesToType[phrasesIndex]
   if(!deletingPhrase && currentValue.length === phraseType.length){
-    debugger
+    // debugger
     deletingPhrase = true
     setTimeout(update, pauseDelay)
     return
   }
   if(deletingPhrase && currentValue === ""){
-    debugger
+    // debugger
     deletingPhrase = false
     phrasesIndex++
     if(phrasesIndex >= phraseType.length){
-      debugger
+      // debugger
       phrasesIndex = 0
     }
     setTimeout(update, pauseDelay)
     return
   }
   if(deletingPhrase){
-    debugger
+    // debugger
     currentValue = currentValue.slice(0,-1)
     setTimeout(update, 300 )
   }
   else{
-    debugger
+    // debugger
     currentValue = phraseType.slice(0,currentValue.lenth+1)
     setTimeout(update, 200 )
   }

@@ -7,7 +7,7 @@ body {
   background-color: #24292E;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #606D7A;
+  color: #9e9e9e;
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
 }
@@ -23,8 +23,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation, a {
   text-decoration: none;
-  color: #606D7A;
+  color: #9E9E9E;
   padding: 20px 5px 5px 40px;
+  font-variant: small-caps;
 }
 
 .navigation, a:hover {
