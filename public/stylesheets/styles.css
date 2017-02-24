@@ -3,7 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #24292E;
+}
 h1 {
   color: red;
 }
@@ -12,11 +14,18 @@ h1 {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  margin: 5px;
   padding-left: 5px;
+  font-family: "Roboto", "Helvetica Neue","Helvetica", Arial, sans-serif;
+  font-size: 20px;
+  font-
 }
 
 .navigation, a {
   text-decoration: none;
-  color: #7E8184;
+  color: #606D7A;
+  padding: 20px 5px 5px 40px;
+}
+
+.navigation, a:hover {
+  color: #fff;
 }
