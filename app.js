@@ -1,15 +1,20 @@
 const express = require('express')
+const path = require('path')
+const app = express()
 
-const router = express()
-
-router.get('/', (request, response) => {
-  response.send('I should probably change this.')
+app.use( (request, response) => {
+  response.status(404).send('Sorry cannot find that!')
 })
 
-router.listen(2017, () => {
+app.set('views', path.join(__dirname, 'views') )
+app.set('view engine', 'pug')
+app.use(express.static(path.join(__dirname, 'public')))
+app.set('port', 2017)
+
+app.listen(app.get('port'), () => {
   console.log('The server is listening on 2017')
 })
 
-router.use( (request, response) => {
-  res.status(404).send("Sorry can't find that!")
+app.get('/', (request, response) => {
+  response.render('landing')
 })
