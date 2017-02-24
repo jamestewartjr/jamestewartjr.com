@@ -1,10 +1,10 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-
-app.use( (request, response) => {
-  response.status(404).send('Sorry cannot find that!')
-})
+const 
+// app.use( (request, response) => {
+//   response.status(404).send('Sorry cannot find that!')
+// })
 
 app.set('views', path.join(__dirname, 'views') )
 app.set('view engine', 'pug')
