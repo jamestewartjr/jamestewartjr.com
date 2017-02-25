@@ -20,3 +20,15 @@ app.listen(app.get('port'), () => {
 app.get('/', (request, response) => {
   response.render('landing')
 })
+
+app.get('/about', (request, response) => {
+  response.render('about')
+})
+
+app.get('/contact', (request, response) => {
+  response.render('contact')
+})
+
+app.get('/work', (request, response) => {
+  response.render('work')
+})
