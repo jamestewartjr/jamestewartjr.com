@@ -3,11 +3,35 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
   background-color: #24292E;
 }
-h1 {
-  color: red;
+.me {
+  height: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  margin-top: 20px;
+  font-family: 'Montserrat',"Roboto", sans-serif;
+}
+
+.nagivation-wrapper{
+  flex-direction: row;
+}
+
+/*.navigation-brand {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5px;
+  font-family: 'Montserrat', "Roboto", "Helvetica Neue","Helvetica", Arial, sans-serif;
+  font-size: 20px;
+}*/
+
+.nagivation, img {
+  height: 20px;
+  border-radius: 5px;
 }
 
 .navigation {
@@ -15,17 +39,35 @@ h1 {
   display: flex;
   justify-content: flex-end;
   padding-left: 5px;
-  font-family: "Roboto", "Helvetica Neue","Helvetica", Arial, sans-serif;
+  font-family: 'Montserrat', "Roboto", "Helvetica Neue","Helvetica", Arial, sans-serif;
   font-size: 20px;
-  font-
 }
 
 .navigation, a {
   text-decoration: none;
-  color: #606D7A;
+  color: #CDD3DE;
   padding: 20px 5px 5px 40px;
+  font-variant: small-caps;
 }
 
 .navigation, a:hover {
   color: #fff;
+}
+
+.typing-phrase {
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  color: #fff;
+  padding-top: 22px;
+}
+
+.landing-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px
+}
+.photo, img {
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 15px;
 }
