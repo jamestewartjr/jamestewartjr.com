@@ -1,15 +1,20 @@
 doctype html
 html
   head
-    title James Stewart Jr
+    meta(charset='utf-8')
+    meta(name ='description' content='Personal site by James D. Stewart Jr')
+    meta(name='keywords', content='james, james stewart, james stewart jr, james d. stewart jr, donnell stewart, portfolio, website, personal')
+    meta(name='author', content='James D. Stewart Jr')
+    title James D. Stewart Jr
     link(rel='stylesheet', href='stylesheets/styles.css')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
   body
     div(class='navigation-wrapper')
+      ul(class='navigation-brand')
       ul(class='navigation')
         li(class='logo')
           a(href='/') Home
-          //- img(src='/image.png', alt='logo')
+          //- img(class='me'src='/images/me.jpg', alt='logo', height='10px')
         li
           a(href='/about') About
         li
