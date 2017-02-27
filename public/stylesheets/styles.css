@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: flex-end;
   padding-left: 5px;
-  font-family: 'Montserrat', "Roboto", "Helvetica Neue","Helvetica", Arial, sans-serif;
+  font-family: "Roboto", Arial, "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 20px;
 }
 
@@ -66,8 +66,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-around;
   padding-top: 10px
 }
+
 .photo, img {
   height: 400px;
   margin-top: 20px;
   border-radius: 15px;
+}
+
+.about-page{
+  width: 600px;
+  margin: 0 auto;
 }
