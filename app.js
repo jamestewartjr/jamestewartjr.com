@@ -9,7 +9,7 @@ const logger = require('morgan')
 
 app.set('views', path.join(__dirname, 'views') )
 app.set('view engine', 'pug')
-app.set('port', 2017)
+app.set('port', 2017 || process.env.PORT)
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(logger('dev'))
 
