@@ -16,7 +16,7 @@ app.get('/', (request, response) => {
   response.render('landing')
 })
 
-const server = app.listen(process.env.port || 2017, () => {
+const server = app.listen(process.env.PORT || 2017, () => {
   console.log('listening on 2017')
 })
 
