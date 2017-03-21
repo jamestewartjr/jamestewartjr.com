@@ -3,6 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+}
 
 body {
   color: #24292E;
@@ -98,6 +101,7 @@ ul h3 {
   font-family: 'Expletus Sans';
   font-size: 22px;
   color: #EF8D5C;
+  list-style: none;
 }
 
 .landing-wrapper {
@@ -106,6 +110,8 @@ ul h3 {
 
 .content {
   display: flex;
+  justify-content: space-around;
+
 }
 
 .banner h1 {
@@ -115,4 +121,18 @@ ul h3 {
 
 .banner .title {
   color: #EF8D5C;
+}
+
+.connect {
+  font-variant: small-caps;
+  font-family: 'Expletus Sans';
+  font-size: 22px;
+  color: #EF8D5C;
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
