@@ -9,17 +9,18 @@ const logger = require('morgan')
 
 app.set('views', path.join(__dirname, 'views') )
 app.set('view engine', 'pug')
-app.set('port', 2017 || process.env.PORT)
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(logger('dev'))
-
-app.listen(app.get('port'), () => {
-  console.log('The server is listening on 2017')
-})
 
 app.get('/', (request, response) => {
   response.render('landing')
 })
+
+const server = app.listen(process.env.port || 2017, () => {
+  console.log('listening on 2017')
+})
+
+module.exports = server
 
 // app.get('/about', (request, response) => {
 //   response.render('about')
