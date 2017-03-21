@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jamestewartjr/jamestewartjr.github.io#readme",
   "dependencies": {
     "express": "^4.14.1",
+    "jekyll": "^3.0.0-beta1",
     "morgan": "^1.8.1",
     "pug": "^2.0.0-beta11"
   }
