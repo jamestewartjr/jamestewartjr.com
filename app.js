@@ -17,7 +17,7 @@ app.get('/', (request, response) => {
 })
 
 const server = app.listen(process.env.PORT || 2017, () => {
-  console.log('listening on 2017')
+  console.log('listening on 2017': process.env.PORT)
 })
 
 module.exports = server
