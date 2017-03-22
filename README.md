@@ -16,4 +16,5 @@
 - [GitHub](https://github.com/jamestewartjr/)
 - [LinkedIn](https://linkedin.com/in/jamestewartjr/)
 
-![James D Stewart Jr](../public/images/landing-smile.jpg?raw=true "Me!")
+![James D Stewart Jr](/public/images/landing-smile.jpg?raw=true "Me!")
+   kj
