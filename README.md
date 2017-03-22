@@ -3,11 +3,11 @@
 # Full Stack engineer who enjoys client-side and server-side Javascript.
 
 ### Currently
-- [Learners Guild: Software Engineer Apprentice](href=https://learnersguild.org)
+- [Learners Guild: Software Engineer Apprentice](https://learnersguild.org)
 
 ### Previously
-- [Colorstock: Co-founder](href=https://getcolorstock.com)
-- [Detailed Block: Co-founder, CEO](href=https://www.charlotteagenda.com/20077/work-life-of-james-stewart-co-founder-of-colorstock/)
+- [Colorstock: Co-founder](https://getcolorstock.com)
+- [Detailed Block: Co-founder, CEO](https://www.charlotteagenda.com/20077/work-life-of-james-stewart-co-founder-of-colorstock/)
 
 ### Connect
 
