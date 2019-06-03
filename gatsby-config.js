@@ -10,21 +10,25 @@ module.exports = {
     },
     menuLinks: [
       {
-        name: 'Services',
-        link: '/services',
-      },
-      {
-        name: 'Team',
-        link: '/team',
-      },
-      {
-        name: 'Testimonials',
-        link: '/testimonials',
+        name: 'Home',
+        link: '/',
       },
       // {
-      //   name: 'Contact',
-      //   link: '/contact',
+      //   name: 'Services',
+      //   link: '/services',
       // },
+      // {
+      //   name: 'Team',
+      //   link: '/team',
+      // },
+      // {
+      //   name: 'Testimonials',
+      //   link: '/testimonials',
+      // },
+      {
+        name: 'Contact',
+        link: '/contact',
+      },
     ],
   },
   plugins: [

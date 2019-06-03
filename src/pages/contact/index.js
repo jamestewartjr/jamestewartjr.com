@@ -21,53 +21,22 @@ const Contact = props => (
           <Call button={false} />
         </div> */}
         <div className="col-8">
-          <h4 className="mt-4">Business Hours</h4>
-          <table className="table table-sm opening-hours-table">
-            <tbody>
-              <tr>
-                <td className="day font-weight-bold">Monday</td>
-                <td className="opens">8:30am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Tuesday</td>
-                <td className="opens">8:30am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Wednesday</td>
-                <td className="opens">8:30am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Thursday</td>
-                <td className="opens">8:30am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Friday</td>
-                <td className="opens">8:30am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Saturday</td>
-                <td className="opens">Closed</td>
-                <td />
-                <td className="closes" />
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Sunday</td>
-                <td className="opens">Closed</td>
-                <td />
-                <td className="closes" />
-              </tr>
-            </tbody>
-          </table>
+          <h4 className="mt-4"> Connect </h4>
+          <ul>
+          <lI>
+              <a href='https://medium.com/@JameStewartJr'> Blog </a>
+            </lI>
+            <lI>
+              <a href='https://github.com/jamestewartjr/'> Github</a>
+            </lI>
+            <lI>
+              <a href='https://twitter.com/jamestewartjr'> Twitter</a>
+            </lI>
+            <lI>
+              <a href='https://www.linkedin.com/in/jamestewartjr/'> LinkedIn  </a>
+            </lI>
+          </ul>
+            
         </div>
       </div>
     </div>

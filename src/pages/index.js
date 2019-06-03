@@ -47,15 +47,15 @@ const Home = (props) => {
               </div>
             </div>
           ))}
-          <div className="col-12 text-center">
+          {/* <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services">
               View All Services
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
+      {/* <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <div className="row justify-content-center">
           <div className="col-12">
             <h2 className="title-3 text-dark mb-4">Our Features</h2>
@@ -74,7 +74,7 @@ const Home = (props) => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };
