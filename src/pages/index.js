@@ -1,13 +1,13 @@
 import React from 'react';
-import { graphql, withPrefix, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 // import Call from '../components/Call';
 
 const Home = (props) => {
-  const markdown = props.data.allMarkdownRemark.edges;
-  const json = props.data.allFeaturesJson.edges;
+  // const markdown = props.data.allMarkdownRemark.edges;
+  // const json = props.data.allFeaturesJson.edges;
   return (
     <Layout bodyClass="page-home">
       <SEO title="Home" />
@@ -32,9 +32,9 @@ const Home = (props) => {
 
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
-          <div className="col-12">
+          {/* <div className="col-12">
             <h2 className="title-3 text-dark mb-3"></h2>
-          </div>
+          </div> */}
           {/* Content summary on homepage*/}
           {/* {markdown.map(edge => (
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">

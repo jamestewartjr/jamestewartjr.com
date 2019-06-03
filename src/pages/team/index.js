@@ -45,11 +45,11 @@ const Team = (props) => {
                       <li>
                         <strong>{edge.node.frontmatter.jobtitle}</strong>
                       </li>
-                      <li>
+                      {/* <li>
                         <a target="_blank" href={edge.node.frontmatter.linkedinurl}>
                           {edge.node.frontmatter.linkedinurl}
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href={edge.node.frontmatter.email}>{edge.node.frontmatter.email}</a>
                       </li>
