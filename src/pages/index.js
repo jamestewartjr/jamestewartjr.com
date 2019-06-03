@@ -35,7 +35,8 @@ const Home = (props) => {
           <div className="col-12">
             <h2 className="title-3 text-dark mb-3"></h2>
           </div>
-          {markdown.map(edge => (
+          {/* Content summary on homepage*/}
+          {/* {markdown.map(edge => (
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
@@ -46,12 +47,33 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
           {/* <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services">
               View All Services
             </Link>
           </div> */}
+          <h6 className="title-3 text-dark mb-4">Currently</h6>
+          <ul>
+            <lI>
+              <a href='https://'> Frontend Engineer (Contract)</a>
+            </lI>
+          </ul>
+          <h6 className="title-3 text-dark mb-4">Previously</h6>
+          <ul>
+            <lI>
+              <a href='https://www.invue.com'> InVue: Software Engineer (Contract)</a>
+            </lI>
+            <lI>
+              <a href='https://learnersguild.org'> Learners Guild: Software Engineer</a>
+            </lI>
+            <lI>
+              <a href='https://getcolorstock.com'> Colorstock: Co-founder </a>
+            </lI>
+            <lI>
+              <a href='https://www.charlotteagenda.com/20077/work-life-of-james-stewart-co-founder-of-colorstock/'> Detailed Block: Co-founder, CEO  </a>
+            </lI>
+          </ul>
         </div>
       </div>
 

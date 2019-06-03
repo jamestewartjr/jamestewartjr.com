@@ -23,7 +23,7 @@ const Contact = props => (
         <div className="col-8">
           <h4 className="mt-4"> Connect </h4>
           <ul>
-          <lI>
+            <lI>
               <a href='https://medium.com/@JameStewartJr'> Blog </a>
             </lI>
             <lI>
