@@ -5,7 +5,6 @@ exports.components = {
   "component---src-templates-service-js": () => import("/Users/jamesstewart/Code/jamestewartjr.com/src/templates/service.js" /* webpackChunkName: "component---src-templates-service-js" */),
   "component---src-templates-team-js": () => import("/Users/jamesstewart/Code/jamestewartjr.com/src/templates/team.js" /* webpackChunkName: "component---src-templates-team-js" */),
   "component---src-templates-testimonial-js": () => import("/Users/jamesstewart/Code/jamestewartjr.com/src/templates/testimonial.js" /* webpackChunkName: "component---src-templates-testimonial-js" */),
-  "component---cache-dev-404-page-js": () => import("/Users/jamesstewart/Code/jamestewartjr.com/.cache/dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("/Users/jamesstewart/Code/jamestewartjr.com/src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-contact-index-js": () => import("/Users/jamesstewart/Code/jamestewartjr.com/src/pages/contact/index.js" /* webpackChunkName: "component---src-pages-contact-index-js" */),
   "component---src-pages-index-js": () => import("/Users/jamesstewart/Code/jamestewartjr.com/src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
