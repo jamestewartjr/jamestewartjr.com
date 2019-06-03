@@ -9,7 +9,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "heroku-postbuild": "gatsby build"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
     "prettier-eslint": "^8.8.2"
   },
   "engines": {
-    "node": "7.7.1",
-    "npm": "4.1.2"
+    "node": "8.9.4",
+    "npm": "5.6.0"
   }
 }
