@@ -55,24 +55,14 @@ const Home = (props) => {
           </div> */}
           <h6 className="title-3 text-dark mb-4">Currently</h6>
           <ul>
-            <lI>
-              <a href='https://'> Frontend Engineer (Contract)</a>
-            </lI>
+            <li><a href='https://'> Frontend Engineer (Contract)</a> </li>
           </ul>
           <h6 className="title-3 text-dark mb-4">Previously</h6>
           <ul>
-            <lI>
-              <a href='https://www.invue.com'> InVue: Software Engineer (Contract)</a>
-            </lI>
-            <lI>
-              <a href='https://learnersguild.org'> Learners Guild: Software Engineer</a>
-            </lI>
-            <lI>
-              <a href='https://getcolorstock.com'> Colorstock: Co-founder </a>
-            </lI>
-            <lI>
-              <a href='https://www.charlotteagenda.com/20077/work-life-of-james-stewart-co-founder-of-colorstock/'> Detailed Block: Co-founder, CEO  </a>
-            </lI>
+            <li> <a href='https://www.invue.com'> InVue: Software Engineer (Contract)</a> </li>
+            <li> <a href='https://learnersguild.org'> Learners Guild: Software Engineer</a> </li>
+            <li> <a href='https://getcolorstock.com'> Colorstock: Co-founder </a> </li>
+            <li> <a href='https://www.charlotteagenda.com/20077/work-life-of-james-stewart-co-founder-of-colorstock/'> Detailed Block: Co-founder, CEO  </a> </li>
           </ul>
         </div>
       </div>
