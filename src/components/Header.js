@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
 // import logo from '../images/logo.svg';
@@ -24,9 +24,9 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="container">
-          <div className="logo">
+          {/* <div className="logo">
             <Link to="/"> Home </Link>
-          </div>
+          </div> */}
           {/* <div className="logo-mobile">
             <Link to="/">
               <img alt="James Stewart Homepage" />
