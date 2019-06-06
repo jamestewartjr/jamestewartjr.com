@@ -2,6 +2,12 @@ var plugins = [{
       plugin: require('/Users/jamesstewart/Code/jamestewartjr.com/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/jamesstewart/Code/jamestewartjr.com/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"'James Stewart Jr site","short_name":"'James Stewart Jr site","start_url":"/","background_color":"#1b3ed3","theme_color":"#1b3ed3","display":"minimal-ui","icon":"src/images/logo.svg"},
+    },{
+      plugin: require('/Users/jamesstewart/Code/jamestewartjr.com/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/jamesstewart/Code/jamestewartjr.com/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-XXX-1","head":false},
     }]
