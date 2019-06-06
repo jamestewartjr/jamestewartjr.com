@@ -6,7 +6,7 @@ module.exports = {
     description: 'James Stewart site',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'zerostaticthemes@gmail.com',
+      email: 'jamestewartjr1@gmail.com',
     },
     menuLinks: [
       {
@@ -57,6 +57,19 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `'James Stewart Jr site`,
+        short_name: `'James Stewart Jr site`,
+        start_url: `/`,
+        background_color: `#1b3ed3`,
+        theme_color: `#1b3ed3`,
+        display: `minimal-ui`,
+        icon: `src/images/s-sign.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
