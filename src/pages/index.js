@@ -55,7 +55,7 @@ const Home = (props) => {
           </div> */}
           <h6 className="title-3 text-dark mb-4">Currently</h6>
           <ul>
-            <li><a href='https://'> Frontend Engineer (Contract)</a> </li>
+            <li><a href='https://'> TMA: Frontend Engineer (Contract)</a> </li>
           </ul>
           <h6 className="title-3 text-dark mb-4">Previously</h6>
           <ul>
