@@ -78,5 +78,23 @@ module.exports = {
         head: false,
       },
     },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // your wordpress source
+        baseUrl: `jamstewjr.wordpress.com/`,
+        protocol: `https`,
+        // is it hosted on wordpress.com, or self-hosted?
+        hostingWPCOM: true,
+        // does your site use the Advanced Custom Fields Plugin?
+        useACF: false,
+        auth: {
+          wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
+          wpcom_app_clientId: "66858",
+          wpcom_user: "jamstewjr@gmail.com",
+          wpcom_pass: process.env.WORDPRESS_PASSWORD,
+        },
+      }
+    },
   ],
 };
