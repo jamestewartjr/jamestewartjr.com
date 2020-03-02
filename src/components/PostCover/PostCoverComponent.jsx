@@ -1,5 +1,5 @@
-import React, { Component } from "components/PostCover/react";
-import Img from "components/PostCover/gatsby-image";
+import React, { Component } from "react";
+import Img from "gatsby-image";
 import path from "path";
 import "./PostCover.scss";
 

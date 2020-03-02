@@ -1,11 +1,11 @@
-import React, { Component } from "components/UserInfo/react";
-import Card from "components/UserInfo/react-md/lib/Cards/Card";
-import CardTitle from "components/UserInfo/react-md/lib/Cards/CardTitle";
-import CardText from "components/UserInfo/react-md/lib/Cards/CardText";
-import Avatar from "components/UserInfo/react-md/lib/Avatars";
-import FontIcon from "components/UserInfo/react-md/lib/FontIcons";
-import IconSeparator from "components/UserInfo/react-md/lib/Helpers/IconSeparator";
-import { Follow } from "components/UserInfo/react-twitter-widgets";
+import React, { Component } from "react";
+import Card from "react-md/lib/Cards/Card";
+import CardTitle from "react-md/lib/Cards/CardTitle";
+import CardText from "react-md/lib/Cards/CardText";
+import Avatar from "react-md/lib/Avatars";
+import FontIcon from "react-md/lib/FontIcons";
+import IconSeparator from "react-md/lib/Helpers/IconSeparator";
+import { Follow } from "react-twitter-widgets";
 import UserLinks from "../UserLinks";
 import "./UserInfo.scss";
 

@@ -1,4 +1,4 @@
-import React, { Component } from "components/ToolbarActions/react";
+import React, { Component } from "react";
 import UserLinks from "../UserLinks";
 import "./ToolbarActions.scss";
 

@@ -1,6 +1,6 @@
-import React from "components/Navigation/react";
-import FontIcon from "components/Navigation/react-md/lib/FontIcons";
-import { Link } from "components/Navigation/gatsby";
+import React from "react";
+import FontIcon from "react-md/lib/FontIcons";
+import { Link } from "gatsby";
 
 function GetNavList(config) {
   const NavList = [

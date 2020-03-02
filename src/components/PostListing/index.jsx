@@ -1,4 +1,4 @@
-import React from "components/PostListing/react";
+import React from "react";
 import PostPreview from "../PostPreview";
 
 class PostListing extends React.Component {

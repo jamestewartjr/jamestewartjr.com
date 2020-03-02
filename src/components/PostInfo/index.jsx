@@ -1,10 +1,10 @@
-import React, { Component } from "components/PostInfo/react";
-import CardTitle from "components/PostInfo/react-md/lib/Cards/CardTitle";
-import Avatar from "components/PostInfo/react-md/lib/Avatars";
-import FontIcon from "components/PostInfo/react-md/lib/FontIcons";
-import { Link } from "components/PostInfo/gatsby";
-import moment from "components/PostInfo/moment";
-import _ from "components/PostInfo/lodash";
+import React, { Component } from "react";
+import CardTitle from "react-md/lib/Cards/CardTitle";
+import Avatar from "react-md/lib/Avatars";
+import FontIcon from "react-md/lib/FontIcons";
+import { Link } from "gatsby";
+import moment from "moment";
+import _ from "lodash";
 import config from "../../../data/SiteConfig";
 import "./PostInfo.scss";
 

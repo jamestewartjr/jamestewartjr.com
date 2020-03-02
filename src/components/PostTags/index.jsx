@@ -1,7 +1,7 @@
-import React, { Component } from "components/PostTags/react";
-import _ from "components/PostTags/lodash";
-import { Link } from "components/PostTags/gatsby";
-import Chip from "components/PostTags/react-md/lib/Chips";
+import React, { Component } from "react";
+import _ from "lodash";
+import { Link } from "gatsby";
+import Chip from "react-md/lib/Chips";
 import "./PostTags.scss";
 
 class PostTags extends Component {

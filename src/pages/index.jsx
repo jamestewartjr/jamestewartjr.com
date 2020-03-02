@@ -1,6 +1,6 @@
-import React from "pages/react";
-import Helmet from "pages/react-helmet";
-import { graphql } from "pages/gatsby";
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";

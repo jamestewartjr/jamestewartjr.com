@@ -1,5 +1,5 @@
-import React, { Component } from "components/PostCover/react";
-import { StaticQuery, graphql } from "components/PostCover/gatsby";
+import React, { Component } from "react";
+import { StaticQuery, graphql } from "gatsby";
 import PostCover from "./PostCoverComponent";
 
 class queryWrapper extends Component {

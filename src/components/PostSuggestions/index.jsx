@@ -1,6 +1,6 @@
-import React, { Component } from "components/PostSuggestions/react";
-import FontIcon from "components/PostSuggestions/react-md/lib/FontIcons";
-import { Link } from "components/PostSuggestions/gatsby";
+import React, { Component } from "react";
+import FontIcon from "react-md/lib/FontIcons";
+import { Link } from "gatsby";
 import "./PostSuggestions.scss";
 
 export default class PostSuggestions extends Component {
