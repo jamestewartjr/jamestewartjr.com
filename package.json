@@ -24,6 +24,7 @@
   "license": "MIT",
   "homepage": "https://jamestewartjr.com",
   "dependencies": {
+    "eslint-config-prettier": "^6.10.0",
     "gatsby": "^2.19.23",
     "gatsby-image": "^2.2.41",
     "gatsby-plugin-catch-links": "^2.1.26",
@@ -56,7 +57,7 @@
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "react-icon": "^1.0.0",
+    "react-icons": "^3.9.0",
     "react-md": "^1.15.1",
     "react-share": "^4.0.1",
     "react-twitter-widgets": "^1.7.1",

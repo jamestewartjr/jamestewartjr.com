@@ -30,7 +30,7 @@ const config = {
     {
       label: "Twitter",
       url: "https://twitter.com/jamestewartjr",
-      iconClassName: "fa fa-twitter"
+      iconClassName: "FaTwitter"
     },
     {
       label: "Email",
