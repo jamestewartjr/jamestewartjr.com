@@ -1,8 +1,8 @@
-import React from "templates/react";
-import Helmet from "templates/react-helmet";
-import { graphql } from "templates/gatsby";
-import Card from "templates/react-md/lib/Cards";
-import CardText from "templates/react-md/lib/Cards/CardText";
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Card from "react-md/lib/Cards";
+import CardText from "react-md/lib/Cards/CardText";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo";
 import Disqus from "../components/Disqus";
