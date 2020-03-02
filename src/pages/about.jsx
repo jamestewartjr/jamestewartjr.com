@@ -1,5 +1,5 @@
-import React, { Component } from "pages/react";
-import Helmet from "pages/react-helmet";
+import React, { Component } from "react";
+import Helmet from "react-helmet";
 import Layout from "../layout";
 import About from "../components/About";
 import config from "../../data/SiteConfig";

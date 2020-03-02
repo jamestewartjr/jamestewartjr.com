@@ -1,6 +1,6 @@
-import React, { Component } from "components/Footer/react";
-import Button from "components/Footer/react-md/lib/Buttons";
-import { Link } from "components/Footer/gatsby";
+import React, { Component } from "react";
+import Button from "react-md/lib/Buttons";
+import { Link } from "gatsby";
 import UserLinks from "../UserLinks";
 import config from "../../../data/SiteConfig";
 import "./Footer.scss";

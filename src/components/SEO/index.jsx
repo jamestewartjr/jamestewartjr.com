@@ -1,6 +1,6 @@
-import React, { Component } from "components/SEO/react";
-import Helmet from "components/SEO/react-helmet";
-import urljoin from "components/SEO/url-join";
+import React, { Component } from "react";
+import Helmet from "react-helmet";
+import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
 
 class SEO extends Component {

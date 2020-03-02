@@ -1,6 +1,6 @@
-import React, { Component } from "components/About/react";
-import Card from "components/About/react-md/lib/Cards/Card";
-import CardText from "components/About/react-md/lib/Cards/CardText";
+import React, { Component } from "react";
+import Card from "react-md/lib/Cards/Card";
+import CardText from "react-md/lib/Cards/CardText";
 import UserLinks from "../UserLinks";
 import config from "../../../data/SiteConfig";
 import "./About.scss";

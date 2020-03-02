@@ -1,4 +1,4 @@
-import React, { Component } from "components/SocialLinks/react";
+import React, { Component } from "react";
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -12,8 +12,8 @@ import {
   TelegramIcon,
   LinkedinIcon,
   RedditIcon
-} from "components/SocialLinks/react-share";
-import urljoin from "components/SocialLinks/url-join";
+} from "react-share";
+import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
 import "./SocialLinks.scss";
 

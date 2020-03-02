@@ -1,12 +1,12 @@
-import React, { Component } from "components/Disqus/react";
-import ReactDisqusComments from "components/Disqus/react-disqus-comments";
-import urljoin from "components/Disqus/url-join";
-import Card from "components/Disqus/react-md/lib/Cards/Card";
-import CardTitle from "components/Disqus/react-md/lib/Cards/CardTitle";
-import CardText from "components/Disqus/react-md/lib/Cards/CardText";
-import Avatar from "components/Disqus/react-md/lib/Avatars";
-import FontIcon from "components/Disqus/react-md/lib/FontIcons";
-import Snackbar from "components/Disqus/react-md/lib/Snackbars";
+import React, { Component } from "react";
+import ReactDisqusComments from "react-disqus-comments";
+import urljoin from "url-join";
+import Card from "react-md/lib/Cards/Card";
+import CardTitle from "react-md/lib/Cards/CardTitle";
+import CardText from "react-md/lib/Cards/CardText";
+import Avatar from "react-md/lib/Avatars";
+import FontIcon from "react-md/lib/FontIcons";
+import Snackbar from "react-md/lib/Snackbars";
 import config from "../../../data/SiteConfig";
 
 class Disqus extends Component {

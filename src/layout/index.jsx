@@ -1,6 +1,6 @@
-import React from "layout/react";
-import Helmet from "layout/react-helmet";
-import "layout/font-awesome/scss/font-awesome.scss";
+import React from "react";
+import Helmet from "react-helmet";
+// import "font-awesome/scss/font-awesome.scss";
 import Navigation from "../components/Navigation";
 import config from "../../data/SiteConfig";
 import "./index.scss";

@@ -1,5 +1,5 @@
-import React, { Component } from "components/UserLinks/react";
-import Button from "components/UserLinks/react-md/lib/Buttons";
+import React, { Component } from "react";
+import Button from "react-md/lib/Buttons";
 import "./UserLinks.scss";
 
 class UserLinks extends Component {
