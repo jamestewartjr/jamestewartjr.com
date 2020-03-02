@@ -18,7 +18,7 @@ const config = {
   userEmail: "jamestewartjr1@gmail.com",
   userTwitter: "jamestewartjr",
   userLocation: "Charlotte",
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  userAvatar: "static/assets/jamesstewartjr.jpg", // User avatar to display in the author segment.
   userDescription:
     "James Stewart Jr is a fullstack software developer, dad, and Charlotte resident.",
   userLinks: [
