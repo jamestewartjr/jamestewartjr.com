@@ -6,6 +6,7 @@ import Avatar from "react-md/lib/Avatars";
 import FontIcon from "react-md/lib/FontIcons";
 import IconSeparator from "react-md/lib/Helpers/IconSeparator";
 import { Follow } from "react-twitter-widgets";
+import {FaMapMarker} from 'react-icons/fa'
 import UserLinks from "../UserLinks";
 import "./UserInfo.scss";
 
@@ -53,7 +54,7 @@ class UserInfo extends Component {
         <CardText expandable={!expanded}>
           {userLocation && (
             <IconSeparator label={userLocation} iconBefore>
-              <FontIcon iconClassName="fa fa-map-marker" />
+              <FontIcon iconClassName={FaMapMarker} />
             </IconSeparator>
           )}
           <p>{userDescription && userDescription}</p>

@@ -3,10 +3,12 @@ import CardTitle from "react-md/lib/Cards/CardTitle";
 import Avatar from "react-md/lib/Avatars";
 import FontIcon from "react-md/lib/FontIcons";
 import { Link } from "gatsby";
+import {FaCalendarCheck} from 'react-icons/fa'
 import moment from "moment";
 import _ from "lodash";
 import config from "../../../data/SiteConfig";
 import "./PostInfo.scss";
+
 
 class PostInfo extends Component {
   render() {
@@ -15,7 +17,7 @@ class PostInfo extends Component {
     return (
       <div className="post-info">
         <CardTitle
-          avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
+          avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
           title={`Published on ${moment(postNode.fields.date).format(
             config.dateFormat
           )}`}
