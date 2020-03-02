@@ -1,45 +1,44 @@
 const config = {
-  siteTitle: "Gatsby Material Starter", 
-  siteTitleShort: "GM Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "GatsbyJS Material Starter", // Alternative site title for SEO.
+  siteTitle: "James Stewart Jr",
+  siteTitleShort: "James Stewart",
+  siteTitleAlt: "James Stewart",
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://vagr9k.github.io", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-material-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
+  siteUrl: "https://jamestewartjr.com",
+  pathPrefix: "",
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "A GatsbyJS stater with Material design in mind.", // Website description used for RSS feeds/meta description tag.
-  siteRss: "/rss.xml", // Path to the RSS file.
-  siteRssTitle: "Gatsby Material Starter RSS feed", // Title of the RSS feed
-  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  siteGATrackingID: "UA-47311644-4", // Tracking code ID for google analytics.
-  disqusShortname: "https-vagr9k-github-io-gatsby-material-starter", // Disqus shortname.
-  dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
-  dateFormat: "DD/MM/YYYY", // Date format for display.
-  userName: "Material User", // Username to display in the author segment.
-  userEmail: "MaterialUser@example.com", // Email used for RSS feed's author segment
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
+  siteDescription: "James Stewart Jr is a fullstack software developer, dad, and Charlotte resident.", 
+  siteRss: "/rss.xml",
+  siteRssTitle: "James Stewart Jr notes on technology",
+  siteFBAppID: "", // FB Application ID for using app insights
+  siteGATrackingID: "UA-28338746-1", 
+  disqusShortname: "", // Disqus shortname.
+  dateFromFormat: "YYYY-MM-DD",
+  dateFormat: "MMMM Do, YYYY", 
+  userName: "James",
+  userEmail: "jamestewartjr1@gmail.com",
+  userTwitter: "jamestewartjr",
+  userLocation: "Charlotte",
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
   userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
-  // Links to social profiles/projects you want to display in the author segment/navigation bar.
+    "James Stewart Jr is a fullstack software developer, dad, and Charlotte resident.",
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-material-starter",
+      url: "https://github.com/jamestewartjr",
       iconClassName: "fa fa-github"
     },
     {
       label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
+      url: "https://twitter.com/jamestewartjr",
       iconClassName: "fa fa-twitter"
     },
     {
       label: "Email",
-      url: "mailto:vagr9k@gmail.com",
+      url: "mailto:jamestewartjr1@gmail.com",
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2019. Material User" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2020. James Stewart"
 };
 
 // Validate
