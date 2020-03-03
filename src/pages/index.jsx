@@ -1,23 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
 import Layout from "../layout";
-import PostListing from "../components/PostListing";
-import SEO from "../components/SEO";
+// import About from "../components/About";
 import config from "../../data/SiteConfig";
 
-class Index extends React.Component {
+class Index extends Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const {location}= this.props;
     return (
-      <Layout location={this.props.location} title="Home">
+      <Layout location={location} title="Info">
         <div className="index-container">
           <Helmet>
-            <title>{config.siteTitle}</title>
+            <title>{`Info | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
-          <SEO postEdges={postEdges} />
-          <PostListing postEdges={postEdges} />
+          {/* <About /> */}
+          {/* <div className="hero"> */}
+          <div className="about-wrapper">
+            <h1>Hi! I'm James.</h1>
+            <p> I'm a full stack software developer coding in modern javascript.</p>
+            <p> This is my little part of the web.</p>
+          </div>
         </div>
       </Layout>
     );
@@ -25,29 +28,3 @@ class Index extends React.Component {
 }
 
 export default Index;
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [fields___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-          }
-        }
-      }
-    }
-  }
-`;

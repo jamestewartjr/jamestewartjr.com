@@ -62,7 +62,7 @@ class PostPreview extends Component {
         </Link>
         <CardTitle
           expander={expand}
-          avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
+          // avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
           title={`Published on ${moment(postInfo.date).format(
             config.dateFormat
           )}`}

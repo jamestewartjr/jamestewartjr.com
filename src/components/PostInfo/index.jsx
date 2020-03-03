@@ -17,7 +17,7 @@ class PostInfo extends Component {
     return (
       <div className="post-info">
         <CardTitle
-          avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
+          // avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
           title={`Published on ${moment(postNode.fields.date).format(
             config.dateFormat
           )}`}
@@ -28,9 +28,7 @@ class PostInfo extends Component {
           to={`/categories/${_.kebabCase(post.category)}`}
         >
           <CardTitle
-            avatar={
-              <Avatar icon={<FontIcon iconClassName="fa fa-folder-open" />} />
-            }
+            // avatar={<Avatar icon={<FontIcon iconClassName="fa fa-folder-open" />} />}
             title="In category"
             subtitle={post.category}
           />

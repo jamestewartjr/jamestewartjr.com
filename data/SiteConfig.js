@@ -18,7 +18,7 @@ const config = {
   userEmail: "jamestewartjr1@gmail.com",
   userTwitter: "jamestewartjr",
   userLocation: "Charlotte",
-  userAvatar: "static/assets/jamesstewartjr.jpg", // User avatar to display in the author segment.
+  userAvatar: "assets/jamesstewartjr.jpg", // User avatar to display in the author segment.
   userDescription:
     "James Stewart Jr is a fullstack software developer, dad, and Charlotte resident.",
   userLinks: [
@@ -38,7 +38,7 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2020. James Stewart"
+  copyright: "Copyright © 2020 - James Stewart"
 };
 
 // Validate
