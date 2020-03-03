@@ -1,8 +1,8 @@
 ---
-title: New Post New Site
+title: New Blog New Site
 date: 2020-03-03T04:04:52.645Z
-cover: assets/2.jpg
-slug: new-blog-new-site
+cover: assets/jamesstewartjr.jpg
+slug: /new-blog-new-site
 category: gatsby
 tags:
   - gatsby
