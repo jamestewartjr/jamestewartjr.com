@@ -14,7 +14,13 @@ class Index extends Component {
             <title>{`Info | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
-          <About />
+          {/* <About /> */}
+          {/* <div className="hero"> */}
+          <div className="about-wrapper">
+            <h1>Hi! I'm James.</h1>
+            <p> I'm a full stack software developer coding in modern javascript.</p>
+            <p> This is my little part of the web.</p>
+          </div>
         </div>
       </Layout>
     );
