@@ -38,7 +38,7 @@ class UserInfo extends Component {
       <Card className="md-grid md-cell md-cell--12 user-info">
         <CardTitle
           expander={!expanded}
-          avatar={userAvatar && <Avatar src={userAvatar} role="presentation" />}
+          // avatar={userAvatar && <Avatar src={userAvatar} role="presentation" />}
           title={userName && userName}
           subtitle={
             userTwitter ? (
@@ -52,11 +52,12 @@ class UserInfo extends Component {
           }
         />
         <CardText expandable={!expanded}>
-          {userLocation && (
+          {/* {userLocation && (
             <IconSeparator label={userLocation} iconBefore>
-              <FontIcon iconClassName={FaMapMarker} />
+               <FontIcon iconClassName={FaMapMarker} /> 
             </IconSeparator>
-          )}
+          ) } 
+          */}
           <p>{userDescription && userDescription}</p>
           {userLinksElement}
         </CardText>
