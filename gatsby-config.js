@@ -53,7 +53,6 @@ module.exports = {
           {
             resolve: "gatsby-remark-responsive-iframe"
           },
-          "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-autolink-headers"
         ]
@@ -71,8 +70,8 @@ module.exports = {
         color: "#c62828"
       }
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    'gatsby-plugin-sharp',
+    `gatsby-transformer-sharp`,
     "gatsby-plugin-catch-links",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-twitter",
@@ -135,7 +134,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Material Starter";
+          ret.generator = "James Stewart";
           return ret;
         },
         query: `

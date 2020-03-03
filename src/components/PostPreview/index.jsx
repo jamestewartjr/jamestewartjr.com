@@ -8,6 +8,7 @@ import FontIcon from "react-md/lib/FontIcons";
 import { Link } from "gatsby";
 import moment from "moment";
 import Media, { MediaOverlay } from "react-md/lib/Media";
+import {FaCalendarCheck} from 'react-icons/fa'
 import PostTags from "../PostTags";
 import PostCover from "../PostCover";
 import config from "../../../data/SiteConfig";
@@ -21,6 +22,7 @@ class PostPreview extends Component {
     };
     this.handleResize = this.handleResize.bind(this);
   }
+
   componentDidMount() {
     this.handleResize();
     window.addEventListener("resize", this.handleResize);
@@ -37,6 +39,7 @@ class PostPreview extends Component {
       this.setState({ mobile: true });
     }
   }
+
   render() {
     const { postInfo } = this.props;
     const { mobile } = this.state;
@@ -59,7 +62,7 @@ class PostPreview extends Component {
         </Link>
         <CardTitle
           expander={expand}
-          avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
+          avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
           title={`Published on ${moment(postInfo.date).format(
             config.dateFormat
           )}`}
