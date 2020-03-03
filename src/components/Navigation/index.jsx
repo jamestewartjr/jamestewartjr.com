@@ -8,7 +8,7 @@ import "./Navigation.scss";
 class Navigation extends Component {
   render() {
     const { children, config, LocalTitle } = this.props;
-    const footerLinks = LocalTitle !== "About";
+    const footerLinks = LocalTitle !== "Info";
     return (
       <NavigationDrawer
         drawerTitle={config.siteTitle}

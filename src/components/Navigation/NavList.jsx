@@ -1,39 +1,30 @@
 import React from "react";
 import FontIcon from "react-md/lib/FontIcons";
+// import {FaHome} from 'react-icons';
 import { Link } from "gatsby";
 
 function GetNavList(config) {
   const NavList = [
     {
-      primaryText: "Home",
+      primaryText: "Info",
       leftIcon: <FontIcon>home</FontIcon>,
       component: Link,
       to: "/"
     },
     {
-      divider: true
-    }
+      primaryText: "Notes",
+      leftIcon: <FontIcon>book</FontIcon>,
+      component: Link,
+      to: "/notes/"
+    },
+    // {
+    //   primaryText: "About",
+    //   leftIcon: <FontIcon>person</FontIcon>,
+    //   component: Link,
+    //   to: "/about/"
+    // }
   ];
 
-  if (config.userLinks) {
-    config.userLinks.forEach(link => {
-      NavList.push({
-        primaryText: link.label,
-        leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
-        component: "a",
-        href: link.url
-      });
-    });
-  }
-
-  NavList.push({ divider: true });
-
-  NavList.push({
-    primaryText: "About",
-    leftIcon: <FontIcon>person</FontIcon>,
-    component: Link,
-    to: "/about/"
-  });
   return NavList;
 }
 export default GetNavList;
