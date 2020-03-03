@@ -3,7 +3,7 @@
 .footer {
   justify-content: center;
   align-content: center;
-  background-color: $md-primary-color;
+  background-color: $md-background-color;
   padding: 10px 5px 5px;
 
   .notice-container {
@@ -16,6 +16,7 @@
       display: flex;
       flex: 1;
       justify-content: flex-start;
+      color:$md-black-color;
 
       @media (max-width: 640px - 1px) {
         justify-content: center;
@@ -45,7 +46,7 @@
     }
 
     h4 {
-      color: $md-secondary-color;
+      color: $md-black-color;
       text-align: center;
       margin: 0;
     }

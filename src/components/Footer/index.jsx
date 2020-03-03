@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Button from "react-md/lib/Buttons";
 import { Link } from "gatsby";
-import {FaRss} from 'react-icons/fa'
 import UserLinks from "../UserLinks";
 import config from "../../../data/SiteConfig";
 import "./Footer.scss";
@@ -24,8 +23,8 @@ class Footer extends Component {
 
           <div className="rss">
             <Link to={url}>
-              <Button flat secondary iconClassName={FaRss}>
-                Subscribe
+              <Button flat secondary>
+                RSS
               </Button>
             </Link>
           </div>

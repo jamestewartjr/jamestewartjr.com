@@ -38,7 +38,7 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2020. James Stewart"
+  copyright: "Copyright © 2020 - James Stewart"
 };
 
 // Validate
