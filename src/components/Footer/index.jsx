@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Button from "react-md/lib/Buttons";
 import { Link } from "gatsby";
+import {FaRss} from 'react-icons/fa'
 import UserLinks from "../UserLinks";
 import config from "../../../data/SiteConfig";
 import "./Footer.scss";
@@ -23,18 +24,10 @@ class Footer extends Component {
 
           <div className="rss">
             <Link to={url}>
-              <Button flat secondary iconClassName="fa fa-rss">
+              <Button flat secondary iconClassName={FaRss}>
                 Subscribe
               </Button>
             </Link>
-          </div>
-          <div className="based-on">
-            <h4>
-              Based on{" "}
-              <a href="https://github.com/Vagr9K/gatsby-material-starter">
-                Gatsby Material Starter
-              </a>.
-            </h4>
           </div>
         </div>
       </footer>
