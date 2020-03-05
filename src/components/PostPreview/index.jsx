@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-// import Card from "react-md/lib/Cards/Card";
-import Card from '@material-ui/core/Card';
-import CardTitle from "react-md/lib/Cards/CardTitle";
-import Button from "react-md/lib/Buttons";
-import CardText from "react-md/lib/Cards/CardText";
-import FontIcon from "react-md/lib/FontIcons";
 import { Link } from "gatsby";
 import moment from "moment";
+// import Card from "react-md/lib/Cards/Card";
+import {Card, CardContent, CardMedia, Typography} from '@material-ui/core';
+// import CardTitle from "react-md/lib/Cards/CardTitle";
+
 import Media, { MediaOverlay } from "react-md/lib/Media";
-import {FaCalendarCheck} from 'react-icons/fa'
+
+// import {FaCalendarCheck} from 'react-icons/fa'
 import PostTags from "../PostTags";
 import PostCover from "../PostCover";
 import config from "../../../data/SiteConfig";
@@ -42,36 +41,37 @@ class PostPreview extends Component {
 
   render() {
     const { postInfo } = this.props;
+    console.log('postINfo ', postInfo)
     const { mobile } = this.state;
     const expand = mobile;
     /* eslint no-undef: "off" */
     const coverHeight = mobile ? 162 : 225;
-    return (
-      <Card key={postInfo.path} raise className="md-grid md-cell" xs={12} sm={6} md={6} lg={4}>
-        <Link style={{ textDecoration: "none" }} to={postInfo.path}>
-          <Media style={{ height: coverHeight, paddingBottom: "0px" }}>
-            <PostCover postNode={postInfo} coverHeight={coverHeight} />
-            <MediaOverlay>
-              <CardTitle title={postInfo.title}>
-                <Button raised secondary className="md-cell--right">
-                  Read
-                </Button>
-              </CardTitle>
-            </MediaOverlay>
-          </Media>
-        </Link>
-        <CardTitle
-          expander={expand}
-          title={`Published on ${moment(postInfo.date).format(
-            config.dateFormat
-          )}`}
-          subtitle={`${postInfo.timeToRead} min read`}
-        />
 
-        <CardText expandable={expand}>
-          {postInfo.excerpt}
+    return (
+      <Card key={postInfo.path} className="md-grid md-cell" xs={12} sm={6} md={4} lg={4}>
+        <Link style={{ textDecoration: "none" }} to={postInfo.path}>
+          {/* <CardMedia src={`${postInfo.cover}`} style={{ height: coverHeight, paddingBottom: "0px" }}> 
+            <PostCover postNode={postInfo} coverHeight={coverHeight} />
+          </CardMedia> */}
+          <CardContent>
+            <Typography>
+              {postInfo.title}
+            </Typography>
+          </CardContent>
+        </Link>
+        <CardContent> 
+          <Typography>
+            {`Published on ${moment(postInfo.date).format(config.dateFormat)}`}
+          </Typography>
+          <Typography>
+            {`${postInfo.timeToRead} min read`}
+          </Typography>
+          <Typography>
+            {postInfo.excerpt}
+            
+          </Typography>
           <PostTags tags={postInfo.tags} />
-        </CardText>
+        </CardContent>
       </Card>
     );
   }
