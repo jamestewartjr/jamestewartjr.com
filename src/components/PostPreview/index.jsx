@@ -5,47 +5,44 @@ import moment from "moment";
 import {Card, CardContent, CardMedia, Typography} from '@material-ui/core';
 // import CardTitle from "react-md/lib/Cards/CardTitle";
 
-import Media, { MediaOverlay } from "react-md/lib/Media";
-
 // import {FaCalendarCheck} from 'react-icons/fa'
 import PostTags from "../PostTags";
-import PostCover from "../PostCover";
+// import PostCover from "../PostCover";
 import config from "../../../data/SiteConfig";
 import "./PostPreview.scss";
 
 class PostPreview extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mobile: true
-    };
-    this.handleResize = this.handleResize.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     mobile: true
+  //   };
+  //   this.handleResize = this.handleResize.bind(this);
+  // }
 
-  componentDidMount() {
-    this.handleResize();
-    window.addEventListener("resize", this.handleResize);
-  }
+  // componentDidMount() {
+  //   this.handleResize();
+  //   window.addEventListener("resize", this.handleResize);
+  // }
 
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener("resize", this.handleResize);
+  // }
 
-  handleResize() {
-    if (window.innerWidth >= 640) {
-      this.setState({ mobile: false });
-    } else {
-      this.setState({ mobile: true });
-    }
-  }
+  // handleResize() {
+  //   if (window.innerWidth >= 640) {
+  //     this.setState({ mobile: false });
+  //   } else {
+  //     this.setState({ mobile: true });
+  //   }
+  // }
 
   render() {
     const { postInfo } = this.props;
-    console.log('postINfo ', postInfo)
-    const { mobile } = this.state;
-    const expand = mobile;
-    /* eslint no-undef: "off" */
-    const coverHeight = mobile ? 162 : 225;
+    // const { mobile } = this.state;
+    // const expand = mobile;
+    // /* eslint no-undef: "off" */
+    // const coverHeight = mobile ? 162 : 225;
 
     return (
       <Card key={postInfo.path} className="md-grid md-cell" xs={12} sm={6} md={4} lg={4}>
