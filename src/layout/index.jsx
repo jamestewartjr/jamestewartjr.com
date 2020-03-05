@@ -7,9 +7,9 @@ import "./global.scss";
 
 export default class MainLayout extends React.Component {
   render() {
-    const { children } = this.props;
+    const { children, title } = this.props;
     return (
-      <Navigation config={config} LocalTitle={this.props.title}>
+      <Navigation config={config} LocalTitle={title}>
         <div>
           <Helmet>
             <meta name="description" content={config.siteDescription} />
