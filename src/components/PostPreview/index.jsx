@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Card from '@material-ui/core/Card';
 import CardTitle from "react-md/lib/Cards/CardTitle";
 import Button from "react-md/lib/Buttons";
-import Avatar from "react-md/lib/Avatars";
 import CardText from "react-md/lib/Cards/CardText";
 import FontIcon from "react-md/lib/FontIcons";
 import { Link } from "gatsby";
@@ -63,7 +62,6 @@ class PostPreview extends Component {
         </Link>
         <CardTitle
           expander={expand}
-          // avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
           title={`Published on ${moment(postInfo.date).format(
             config.dateFormat
           )}`}
