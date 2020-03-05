@@ -1,14 +1,10 @@
 import React, { Component } from "react";
-import CardTitle from "react-md/lib/Cards/CardTitle";
-import Avatar from "react-md/lib/Avatars";
-import FontIcon from "react-md/lib/FontIcons";
+import {Card, CardContent, Typography} from "@material-ui/core"
 import { Link } from "gatsby";
-import {FaCalendarCheck} from 'react-icons/fa'
 import moment from "moment";
 import _ from "lodash";
 import config from "../../../data/SiteConfig";
 import "./PostInfo.scss";
-
 
 class PostInfo extends Component {
   render() {
@@ -16,23 +12,23 @@ class PostInfo extends Component {
     const post = postNode.frontmatter;
     return (
       <div className="post-info">
-        <CardTitle
-          // avatar={<Avatar icon={<FontIcon iconClassName={FaCalendarCheck} />} />}
-          title={`Published on ${moment(postNode.fields.date).format(
+        <Typography variant="h6">
+          {`Published: ${moment(postNode.fields.date).format(
             config.dateFormat
           )}`}
-          subtitle={`${postNode.timeToRead} min read`}
-        />
-        <Link
-          className="category-link"
-          to={`/categories/${_.kebabCase(post.category)}`}
-        >
-          <CardTitle
-            // avatar={<Avatar icon={<FontIcon iconClassName="fa fa-folder-open" />} />}
-            title="In category"
-            subtitle={post.category}
-          />
-        </Link>
+        </Typography>
+        <Typography>
+          {`${postNode.timeToRead} min read`}
+        </Typography>
+        <Typography>
+          <span>Category: </span> 
+          <Link
+            className="category-link"
+            to={`/categories/${_.kebabCase(post.category)}`}
+          >
+            {post.category}
+          </Link>
+        </Typography>
       </div>
     );
   }
