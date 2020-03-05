@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import {Typography} from '@material-ui/core';
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
@@ -19,6 +20,9 @@ class Notes extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}/notes/`} />
           </Helmet>
           <SEO postEdges={postEdges} />
+          <Typography align="center" variant="h1">
+            Notes
+          </Typography>
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
