@@ -58,7 +58,7 @@ class PostPreview extends Component {
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
           </CardMedia> */}
           <CardContent>
-            <Typography variant="h3">
+            <Typography align="center" variant="h3">
               {postInfo.title}
             </Typography>
           </CardContent>
