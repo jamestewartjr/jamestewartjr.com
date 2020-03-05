@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Card, CardContent, Typography} from "@material-ui/core"
+import {Typography} from "@material-ui/core"
 import { Link } from "gatsby";
 import moment from "moment";
 import _ from "lodash";
@@ -17,10 +17,10 @@ class PostInfo extends Component {
             config.dateFormat
           )}`}
         </Typography>
-        <Typography>
+        <Typography variant="h6">
           {`${postNode.timeToRead} min read`}
         </Typography>
-        <Typography>
+        <Typography variant="h6">
           <span>Category: </span> 
           <Link
             className="category-link"
