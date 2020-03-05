@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Card from "react-md/lib/Cards/Card";
+// import Card from "react-md/lib/Cards/Card";
+import Card from '@material-ui/core/Card';
 import CardTitle from "react-md/lib/Cards/CardTitle";
 import Button from "react-md/lib/Buttons";
 import Avatar from "react-md/lib/Avatars";
@@ -47,7 +48,7 @@ class PostPreview extends Component {
     /* eslint no-undef: "off" */
     const coverHeight = mobile ? 162 : 225;
     return (
-      <Card key={postInfo.path} raise className="md-grid md-cell md-cell--12">
+      <Card key={postInfo.path} raise className="md-grid md-cell" xs={12} sm={6} md={6} lg={4}>
         <Link style={{ textDecoration: "none" }} to={postInfo.path}>
           <Media style={{ height: coverHeight, paddingBottom: "0px" }}>
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
