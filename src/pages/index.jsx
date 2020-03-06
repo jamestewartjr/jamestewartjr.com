@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import {IconButton} from '@material-ui/core';
-import Image from 'gatsby-image';
+// import Image from 'gatsby-image';
 import Layout from "../layout";
 // import About from "../components/About";
 import config from "../../data/SiteConfig";
