@@ -77,9 +77,9 @@ class PostPreview extends Component {
             <Typography variant="h6">
               {postInfo.excerpt}
             </Typography>
-            <PostTags tags={postInfo.tags} />
           </CardContent>
         </Link>
+        <PostTags tags={postInfo.tags} />
       </Card>
     );
   }
