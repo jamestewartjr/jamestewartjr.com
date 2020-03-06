@@ -1,4 +1,5 @@
 const urljoin = require("url-join");
+const path = require('path');
 const config = require("./data/SiteConfig");
 
 const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
@@ -36,6 +37,13 @@ module.exports = {
         name: "posts",
         path: `${__dirname}/content`
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
