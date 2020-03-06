@@ -12,10 +12,10 @@ function GetNavList(config) {
       to: "/"
     },
     {
-      primaryText: "Notes",
+      primaryText: "Articles",
       leftIcon: <FontIcon>book</FontIcon>,
       component: Link,
-      to: "/notes/"
+      to: "/articles/"
     },
     // {
     //   primaryText: "About",
