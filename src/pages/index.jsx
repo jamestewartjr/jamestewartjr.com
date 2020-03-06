@@ -39,7 +39,7 @@ class Index extends Component {
               <div className="bio">
                 <h1>Hi, I'm James.</h1>
                 <p> 
-                  I'm a full stack software engineer coding in modern javascript.
+                  I'm a full stack software engineer coding in modern javascript based in Charlotte.
                   This is my little part of the web.
                 </p>
               
