@@ -53,33 +53,33 @@ class PostPreview extends Component {
 
     return (
       <Card key={postInfo.path} className="md-grid md-cell xs-cell--12">
-        <CardContent>
-          <Link style={{ textDecoration: "none" }} to={postInfo.path}>
+        <Link style={{ textDecoration: "none" }} to={postInfo.path}>
+          <CardContent>
             {/* <CardMedia src={`${postInfo.cover}`} style={{ height: coverHeight, paddingBottom: "0px" }}> 
               <PostCover postNode={postInfo} coverHeight={coverHeight} />
             </CardMedia> */}
             <Typography align="center" variant="h4">
               {postInfo.title}
             </Typography>
-          </Link>
-        </CardContent>
-        <CardContent> 
-          <Typography variant="h6">
-            {`Published on ${formattedpublishedDate}`}
-          </Typography>
-          { 
-            publishedDate >  twoWeeksAgo
-            ? <Chip label="NEW" color="secondary" />
-            : null 
-          }
-          <Typography>
-            {`${postInfo.timeToRead} min read`}
-          </Typography>
-          <Typography variant="h6">
-            {postInfo.excerpt}
-          </Typography>
-          <PostTags tags={postInfo.tags} />
-        </CardContent>
+          </CardContent>
+          <CardContent> 
+            <Typography variant="h6">
+              {`Published on ${formattedpublishedDate}`}
+            </Typography>
+            { 
+              publishedDate >  twoWeeksAgo
+              ? <Chip label="NEW" color="secondary" />
+              : null 
+            }
+            <Typography>
+              {`${postInfo.timeToRead} min read`}
+            </Typography>
+            <Typography variant="h6">
+              {postInfo.excerpt}
+            </Typography>
+            <PostTags tags={postInfo.tags} />
+          </CardContent>
+        </Link>
       </Card>
     );
   }
