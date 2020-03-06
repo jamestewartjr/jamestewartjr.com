@@ -33,7 +33,7 @@ class Articles extends React.Component {
 export default Articles;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query ArticlesQuery {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
