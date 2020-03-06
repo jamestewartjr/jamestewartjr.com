@@ -14,43 +14,48 @@ class Index extends Component {
       <Layout location={location} title="Info">
         <div className="index-container">
           <Helmet>
-            <title>{`Info | ${config.siteTitle}`}</title>
+            <title>{`${config.siteTitle} Full Stack Engineer`}</title>
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
           {/* <About /> */}
           {/* <div className="hero"> */}
           <div className="about-wrapper">
-            <h1>Hi, I'm James.</h1>
-            <p> 
-              I'm a full stack software engineer coding in modern javascript.
-              This is my little part of the web.
-            </p>
-            {/* <Image
-              className="avatar"
-              // fixed={data.avatar.childImageSharp.fixed}
-              // alt={author}
-              style={{
-                marginBottom: 0,
-                minWidth: 250,
-                borderRadius: `100%`,
-                border: `8px solid var(--blue)`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            /> */}
-            <ul className="horizontal-links">
-              {SOCIAL.map(s => (
-                <li key={s.kind}>
-                  <a className="u-no-box-shadow" style={{ textDecoration: "none" }} href={s.url}>
-                    <IconButton aria-label={s.kind}>
-                      <s.icon />
-                    </IconButton>
-                  </a>
-                </li>
-                ))}
-            </ul>
-
+            <div className="highlight">
+              <div className="bio">
+                <h1>Hi, I'm James.</h1>
+                <p> 
+                  I'm a full stack software engineer coding in modern javascript.
+                  This is my little part of the web.
+                </p>
+              
+                {/* <Image
+                  className="avatar"
+                  // fixed={data.avatar.childImageSharp.fixed}
+                  // alt={author}
+                  style={{
+                    marginBottom: 0,
+                    minWidth: 250,
+                    borderRadius: `100%`,
+                    border: `8px solid var(--blue)`,
+                  }}
+                  imgStyle={{
+                    borderRadius: `50%`,
+                  }}
+                /> */}
+                <ul className="horizontal-links">
+                  {SOCIAL.map(s => (
+                    <li key={s.kind}>
+                      <a className="u-no-box-shadow" style={{ textDecoration: "none" }} href={s.url}>
+                        <IconButton aria-label={s.kind}>
+                          <s.icon />
+                        </IconButton>
+                      </a>
+                    </li>
+                    ))}
+                </ul>
+              </div>
+              <img src={config.userAvatar} alt="James" className="avatar" />
+            </div>
           </div>
           
         </div>

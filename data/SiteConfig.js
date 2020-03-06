@@ -8,7 +8,7 @@ const config = {
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: "James Stewart Jr is a fullstack software developer, dad, and Charlotte resident.", 
   siteRss: "/rss.xml",
-  siteRssTitle: "James Stewart Jr notes on technology",
+  siteRssTitle: "James Stewart Jr thoughts",
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "UA-28338746-1", 
   disqusShortname: "", // Disqus shortname.
