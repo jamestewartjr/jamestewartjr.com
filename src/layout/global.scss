@@ -4,3 +4,11 @@ div .mobile-fix {
         padding-right: 0;
     }
 }
+
+.section {
+    margin: 40px 0;
+
+    &:first-of-type {
+        margin-bottom: 0;
+    }
+}

@@ -7,21 +7,21 @@ import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 
-class Notes extends React.Component {
+class Articles extends React.Component {
   render() {
     const {data, location}= this.props;
     const postEdges = data.allMarkdownRemark.edges;
     return (
-      <Layout location={location} title="Notes">
-        <div className="notes-container">
+      <Layout location={location} title="Articles">
+        <div className="articles-container">
           <Helmet>
             {/* <title>{config.siteTitle}</title> */}
-            <title>{`Notes | ${config.siteTitle}`}</title>
-            <link rel="canonical" href={`${config.siteUrl}/notes/`} />
+            <title>{`Articles | ${config.siteTitle}`}</title>
+            <link rel="canonical" href={`${config.siteUrl}/articles/`} />
           </Helmet>
           <SEO postEdges={postEdges} />
           <Typography align="center" variant="h1">
-            Notes
+            Articles
           </Typography>
           <PostListing postEdges={postEdges} />
         </div>
@@ -30,10 +30,10 @@ class Notes extends React.Component {
   }
 }
 
-export default Notes;
+export default Articles;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query ArticlesQuery {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
