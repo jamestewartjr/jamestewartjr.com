@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 import moment from "moment";
 import {
-  Badge,
+  Chip,
   Card, 
   CardContent, 
   // CardMedia, 
@@ -52,30 +52,30 @@ class PostPreview extends Component {
     // const coverHeight = mobile ? 162 : 225;
 
     return (
-      <Card key={postInfo.path} className="md-grid md-cell md-cell--12">
-        <Link style={{ textDecoration: "none" }} to={postInfo.path}>
-          {/* <CardMedia src={`${postInfo.cover}`} style={{ height: coverHeight, paddingBottom: "0px" }}> 
-            <PostCover postNode={postInfo} coverHeight={coverHeight} />
-          </CardMedia> */}
-          <CardContent>
-            <Typography align="center" variant="h3">
+      <Card key={postInfo.path} className="md-grid md-cell xs-cell--12">
+        <CardContent>
+          <Link style={{ textDecoration: "none" }} to={postInfo.path}>
+            {/* <CardMedia src={`${postInfo.cover}`} style={{ height: coverHeight, paddingBottom: "0px" }}> 
+              <PostCover postNode={postInfo} coverHeight={coverHeight} />
+            </CardMedia> */}
+            <Typography align="center" variant="h4">
               {postInfo.title}
             </Typography>
-          </CardContent>
-        </Link>
+          </Link>
+        </CardContent>
         <CardContent> 
           <Typography variant="h6">
             {`Published on ${formattedpublishedDate}`}
           </Typography>
           { 
             publishedDate >  twoWeeksAgo
-            ? <Badge badgeContent="NEW" color="error" />
+            ? <Chip label="NEW" color="secondary" />
             : null 
           }
           <Typography>
             {`${postInfo.timeToRead} min read`}
           </Typography>
-          <Typography variant="h5">
+          <Typography variant="h6">
             {postInfo.excerpt}
           </Typography>
           <PostTags tags={postInfo.tags} />
