@@ -25,7 +25,7 @@ const config = {
     {
       label: "GitHub",
       url: "https://github.com/jamestewartjr",
-      iconClassName: "fa fa-github"
+      iconClassName: "FaGithub"
     },
     {
       label: "Twitter",
@@ -35,7 +35,7 @@ const config = {
     {
       label: "Email",
       url: "mailto:jamestewartjr1@gmail.com",
-      iconClassName: "fa fa-envelope"
+      iconClassName: "FaEnvelope"
     }
   ],
   copyright: "Copyright © 2020 - James Stewart"
