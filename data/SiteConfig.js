@@ -2,7 +2,7 @@ const config = {
   siteTitle: "James Stewart Jr",
   siteTitleShort: "James Stewart",
   siteTitleAlt: "James Stewart",
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  siteLogo: "/logos/favicon.ico",
   siteUrl: "https://jamestewartjr.com",
   pathPrefix: "",
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
