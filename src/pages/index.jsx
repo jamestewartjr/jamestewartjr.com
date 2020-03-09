@@ -32,7 +32,6 @@ class Index extends Component {
             <title>{`${config.siteTitle} Full Stack Engineer`}</title>
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
-          {/* <About /> */}
           {/* <div className="hero"> */}
           <div className="about-wrapper">
             <div className="highlight">
