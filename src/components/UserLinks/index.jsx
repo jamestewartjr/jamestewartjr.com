@@ -6,7 +6,7 @@ import "./UserLinks.scss";
 
 class UserLinks extends Component {
   getLinkElements() {
-    const { labeled, config: { userLinks } } = this.props;
+    const { labeled} = this.props;
     return (
     // userLinks.map(link => (
       // <Button
