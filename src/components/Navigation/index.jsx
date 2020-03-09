@@ -18,7 +18,7 @@ class Navigation extends Component {
         mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         tabletDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
-        toolbarActions={<ToolbarActions config={config} />}
+        // toolbarActions={<ToolbarActions config={config} />}
       >
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
