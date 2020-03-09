@@ -1,30 +1,22 @@
 import React from "react";
-import FontIcon from "react-md/lib/FontIcons";
-// import {FaHome} from 'react-icons';
+import {FaHome, FaReadme} from 'react-icons/fa';
 import { Link } from "gatsby";
 
 function GetNavList(config) {
   const NavList = [
     {
       primaryText: "Info",
-      leftIcon: <FontIcon>home</FontIcon>,
+      leftIcon: <FaHome />,
       component: Link,
       to: "/"
     },
     {
       primaryText: "Articles",
-      leftIcon: <FontIcon>book</FontIcon>,
+      leftIcon: <FaReadme />,
       component: Link,
       to: "/articles/"
     },
-    // {
-    //   primaryText: "About",
-    //   leftIcon: <FontIcon>person</FontIcon>,
-    //   component: Link,
-    //   to: "/about/"
-    // }
   ];
-
   return NavList;
 }
 export default GetNavList;
