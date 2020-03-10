@@ -67,13 +67,12 @@ class Index extends Component {
                     </li>
                     ))}
                 </ul>
+                <img src={config.userAvatar} alt="James" className="avatar" />
+                <h2>Recent Articles</h2>
+                <CompactListing data={articles} />
               </div>
-              <img src={config.userAvatar} alt="James" className="avatar" />
+
             </div>
-            <h2>Recent Articles</h2>
-            <h3>
-              <CompactListing data={articles} />
-            </h3>
           </div>
 
         </div>
