@@ -58,7 +58,7 @@ class UserInfo extends Component {
           ) } 
           */}
           <p>{userDescription && userDescription}</p>
-          {userLinksElement}
+          {/* {userLinksElement} */}
         </CardText>
       </Card>
     );
