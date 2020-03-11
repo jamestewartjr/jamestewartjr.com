@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import NavigationDrawer from "react-md/lib/NavigationDrawers";
-import ToolbarActions from "../ToolbarActions";
 import Footer from "../Footer";
 import GetNavList from "./NavList";
 import "./Navigation.scss";
@@ -18,8 +17,9 @@ class Navigation extends Component {
         mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         tabletDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
-        toolbarActions={<ToolbarActions config={config} />}
+        // toolbarActions={<ToolbarActions config={config} />}
       >
+      
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>
