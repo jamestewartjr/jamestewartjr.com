@@ -32,7 +32,6 @@ class Index extends Component {
             <title>{`${config.siteTitle} Full Stack Engineer`}</title>
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
-          {/* <About /> */}
           {/* <div className="hero"> */}
           <div className="about-wrapper">
             <div className="highlight">
@@ -68,11 +67,12 @@ class Index extends Component {
                     </li>
                     ))}
                 </ul>
+                <img src={config.userAvatar} alt="James" className="avatar" />
+                <h2>Recent Articles</h2>
+                <CompactListing data={articles} />
               </div>
-              <img src={config.userAvatar} alt="James" className="avatar" />
+
             </div>
-            <h2>Recent Articles</h2>
-            <CompactListing data={articles} />
           </div>
 
         </div>

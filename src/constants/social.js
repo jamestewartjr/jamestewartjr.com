@@ -2,7 +2,6 @@ import {
   FaGithub,
   FaTwitter,
   FaLinkedin,
-  FaMedium,
 } from 'react-icons/fa';
 
 export default [

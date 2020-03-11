@@ -15,12 +15,11 @@ class Footer extends Component {
     }
     return (
       <footer className={fixedFooter ? "footer footer-fixed" : "footer"}>
-        {userLinks ? <UserLinks config={config} labeled /> : null}
         <div className="notice-container">
           <div className="copyright">
             <h4>{copyright}</h4>
           </div>
-
+          {userLinks ? <UserLinks config={config} labeled /> : null}
           <div className="rss">
             <Link to={url}>
               <Button>RSS</Button>
