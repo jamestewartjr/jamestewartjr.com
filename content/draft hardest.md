@@ -1,0 +1,2 @@
+Here I'm going to share with the hardest interview question for me to answer. Why? What I do and say to come out smiling afterwards. The one that makes me the most anxious is: "What have you been doing while you're out work?" The reason it gives me so much anxiety is because my response out that question is a complete "cultural fit". No matter how honest I am. I am either a great fit or a horrible fit for the organization.
+
