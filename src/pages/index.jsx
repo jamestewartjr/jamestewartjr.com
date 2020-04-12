@@ -68,6 +68,10 @@ class Index extends Component {
                     ))}
                 </ul>
                 <img src={config.userAvatar} alt="James" className="avatar" />
+                <h2>Current Projects</h2>
+                <p>{`I'm currently looking for new software opportunities. 
+                    While I'm searching, I'm working on Renotify. 
+                    A web app to help those manage their notifications.`}</p>
                 <h2>Recent Articles</h2>
                 <CompactListing data={articles} />
               </div>
