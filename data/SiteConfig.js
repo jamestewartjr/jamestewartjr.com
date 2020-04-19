@@ -6,7 +6,7 @@ const config = {
   siteUrl: "https://jamestewartjr.com",
   pathPrefix: "",
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "James Stewart Jr is a fullstack software developer, dad, and Charlotte resident.", 
+  siteDescription: "James Stewart Jr is a fullstack software engineer, dad, and Charlotte resident.", 
   siteRss: "/rss.xml",
   siteRssTitle: "James Stewart Jr thoughts",
   siteFBAppID: "", // FB Application ID for using app insights
@@ -20,7 +20,7 @@ const config = {
   userLocation: "Charlotte",
   userAvatar: "assets/jamesstewartjr.jpg", // User avatar to display in the author segment.
   userDescription:
-    "James Stewart Jr is a fullstack software developer, dad, and Charlotte resident.",
+    "James Stewart Jr is a fullstack software engineer, dad, and Charlotte resident.",
   userLinks: [
     {
       label: "GitHub",
@@ -38,7 +38,7 @@ const config = {
       iconClassName: "FaEnvelope"
     }
   ],
-  copyright: "Copyright © 2020 - James Stewart"
+  copyright: "Copyright © 2016-2020 - James Stewart"
 };
 
 // Validate
