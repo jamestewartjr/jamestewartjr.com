@@ -1,5 +1,5 @@
 ---
-title: 7 Weeks in on the Road to Being a Web Developer
+title: 7 Weeks on the Road to Being a Web Developer
 description: >-
   Today is Day 2 of Week 7 and I have decided to continue with a blog in order
   to increase my speed of learning. Two leading reasons I have…
