@@ -1,5 +1,5 @@
 ---
-title: My Hardest Interview Question to Answer
+title: The Hardest Interview Question for me to Answer
 date: 2020-04-10T03:59:30.755Z
 cover: assets/screen-shot-2020-04-18-at-11.42.03-pm.png
 slug: hard-interview-question-and-time-well-spent
