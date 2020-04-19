@@ -10,12 +10,12 @@ class PostCover extends Component {
     const coverNodeList = fileEdges.filter(fileNode => {
       if (fileNode.node.childImageSharp === null) return false;
 
-      if (
-        fileNode.node.absolutePath.indexOf(
-          path.join("/static/assets/", post.cover)
-        ) !== -1
-      )
-        return true;
+      // if (
+      //   fileNode.node.absolutePath.indexOf(
+      //     path.join("/static/assets/", post.cover)
+      //   ) !== -1
+      // )
+      //   return true;
 
       return false;
     });
