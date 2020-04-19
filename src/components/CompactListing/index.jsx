@@ -1,22 +1,39 @@
 import React from 'react'
+import { Chip } from '@material-ui/core';
+import moment from "moment";
 import "./CompactListing.scss";
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Typography from '@material-ui/core/Typography';
 
 const CompactListing = (props) => {
   const {data} = props;
+  const twoWeeksAgo = moment().subtract(14,'days');
+
   return (
-    <section className="compact-listing">
-      {data.map(post => {
-        return (
-          <a key={post.title} href={post.path} target="_blank" rel="noopener noreferrer">
-            <div className="each">
-              <h2>
-                {/* <img src={post.img} alt={post.title} /> */}
-                {post.title}
-              </h2>
-            </div>
-          </a>
-        )
-      })}
+    <section className="compact_listing">
+      <List component="nav" aria-label="compact_listing">
+        {data.map(post => {
+          return(
+            <ListItem
+              button
+              component="a"
+              key={post.title}
+              href={post.path}
+              className={`compact_listing_${post.title}`}
+            >
+              <ListItemText 
+                primary={<Typography variant="h6">{post.title}</Typography>}
+              />
+              {moment(post.date) > twoWeeksAgo
+                ? <Chip label="NEW" color="secondary" />
+                : null 
+              }
+            </ListItem>
+          )
+        })}
+      </List>
     </section>
   )
 }
