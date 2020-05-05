@@ -20,3 +20,6 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+publish_mode: editorial_workflow
+site_url: https://jamestewartjr.com
