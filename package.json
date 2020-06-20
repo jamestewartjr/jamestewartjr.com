@@ -5,8 +5,7 @@
   "description": "Personal website of James Stewart Jr",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
-    "dev": "npm run develop",
+    "dev": "gatsby develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
     "build:pp": "gatsby build --prefix-paths",
