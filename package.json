@@ -52,7 +52,7 @@
     "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "netlify-cms-app": "^2.11.26",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.5.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.5.1",
