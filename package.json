@@ -1,6 +1,8 @@
 {
-  "name": "gatsby-starter-sanity-homepage",
+  "name": "jamestewartjr.com",
   "version": "1.0.0",
+  "author": "James Stewart <jamestewartjr1@gmail.com>",
+  "description": "Personal website of James Stewart Jr",
   "scripts": {
     "start": "gatsby develop",
     "develop": "gatsby develop",
@@ -10,6 +12,11 @@
     "setup": "node ./scripts/setup.js",
     "gatsby-provision": "gatsby-provision-sanity --sanity-config-path='./studio' --sanity-content-path='./scripts/content.tar.gz'"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestewartjr/jamestewartjr.com"
+  },
+  "homepage": "https://jamestewartjr.com",
   "dependencies": {
     "@sanity/block-content-to-html": "^2.0.0",
     "gatsby-plugin-image": "^2.22.0",
@@ -40,5 +47,10 @@
     "prettier": "2.5.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5"
-  }
+  },
+  "keywords": [
+    "james stewart",
+    "development",
+    "blog"
+  ]
 }
