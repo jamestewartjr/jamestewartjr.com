@@ -29,6 +29,7 @@ module.exports = {
         icon: "src/favicon.png",
       },
     },
+    "gatsby-plugin-netlify"
   ],
   siteMetadata: {
     copyright: "Copyright © 2016-2022 - James Stewart",
