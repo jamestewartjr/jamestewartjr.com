@@ -4,33 +4,6 @@ require("dotenv").config({
 })
 
 module.exports = {
-  plugins: [
-    {
-      resolve: "gatsby-source-sanity",
-      options: {
-        projectId: process.env.SANITY_PROJECT_ID,
-        dataset: process.env.SANITY_PROJECT_DATASET,
-        token: process.env.SANITY_READ_TOKEN,
-      },
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-image",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-vanilla-extract",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "James Stewart Jr Thoughts",
-        short_name: "James",
-        start_url: "/",
-        // These can be imported once ESM support lands
-        background_color: "#ffe491",
-        theme_color: "#004ca3",
-        icon: "src/favicon.png",
-      },
-    },
-    "gatsby-plugin-netlify"
-  ],
   siteMetadata: {
     copyright: "Copyright © 2016-2022 - James Stewart",
     dateFormat: "MMMM Do, YYYY", 
@@ -73,4 +46,33 @@ module.exports = {
     userName: "James",
     userTwitter: "jamestewartjr",
   },
+  plugins: [
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_PROJECT_DATASET,
+        token: process.env.SANITY_READ_TOKEN,
+      },
+    },
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-vanilla-extract",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "James Stewart Jr Thoughts",
+        short_name: "James",
+        start_url: "/",
+        // These can be imported once ESM support lands
+        background_color: "#ffe491",
+        theme_color: "#004ca3",
+        icon: "src/favicon.png",
+      },
+    },
+    "gatsby-plugin-netlify"
+  ],
+
 }

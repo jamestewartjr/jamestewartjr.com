@@ -2090,6 +2090,11 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.7.18.tgz"
   "version" "18.7.18"
 
+"@types/node@^17.0.5":
+  "integrity" "sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.45.tgz"
+  "version" "17.0.45"
+
 "@types/node@^8.5.7":
   "integrity" "sha512-tktOkFUA4kXx2hhhrB8bIFb5TbwzS4uOhKEmwiD+NoiL0qtP2OQ9mFldbgD4dV1djrlBYP6eBuQZiWjuHUpqFw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-8.10.66.tgz"
@@ -2134,6 +2139,13 @@
   "version" "2.0.5"
   dependencies:
     "@types/glob" "*"
+    "@types/node" "*"
+
+"@types/sax@^1.2.1":
+  "integrity" "sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw=="
+  "resolved" "https://registry.npmjs.org/@types/sax/-/sax-1.2.4.tgz"
+  "version" "1.2.4"
+  dependencies:
     "@types/node" "*"
 
 "@types/scheduler@*":
@@ -2601,6 +2613,11 @@
   "integrity" "sha512-Of/R0wqp83cgHozfIYLbBMnej79U/SVGOOyuB3VVFv1NRM/PSFMK12x9KVtiYzJqmnU5WR2qp0Z5rHb7sWGnFQ=="
   "resolved" "https://registry.npmjs.org/arch/-/arch-2.2.0.tgz"
   "version" "2.2.0"
+
+"arg@^5.0.0":
+  "integrity" "sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg=="
+  "resolved" "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz"
+  "version" "5.0.2"
 
 "argparse@^1.0.7":
   "integrity" "sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg=="
@@ -5419,6 +5436,16 @@
     "semver" "^7.3.7"
     "sharp" "^0.30.7"
     "svgo" "^2.8.0"
+
+"gatsby-plugin-sitemap@^5.23.0":
+  "integrity" "sha512-eQYJsVcyQ/VGDSqymS++nTwUJkYqmcd4l5bkQsBuxC2GP3/03UuowK2Ij4egzkCxOBnk8RtjxBFXqYfmtN4uxA=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-5.23.0.tgz"
+  "version" "5.23.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "common-tags" "^1.8.2"
+    "minimatch" "^3.1.2"
+    "sitemap" "^7.0.0"
 
 "gatsby-plugin-typescript@^4.23.0":
   "integrity" "sha512-g/BU1f+LytEofWEwihdZZ8LwVebmB71Cpz/GWuDvzyHLGcua59Q60cAAFn0qVgkjrrj05/1c5jcCrkx7grdhIQ=="
@@ -9266,6 +9293,16 @@
   "integrity" "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="
   "resolved" "https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz"
   "version" "1.0.5"
+
+"sitemap@^7.0.0":
+  "integrity" "sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg=="
+  "resolved" "https://registry.npmjs.org/sitemap/-/sitemap-7.1.1.tgz"
+  "version" "7.1.1"
+  dependencies:
+    "@types/node" "^17.0.5"
+    "@types/sax" "^1.2.1"
+    "arg" "^5.0.0"
+    "sax" "^1.2.4"
 
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
