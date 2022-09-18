@@ -31,6 +31,7 @@
     "gatsby-plugin-netlify": "^5.0.1",
     "gatsby-plugin-react-helmet": "^5.23.0",
     "gatsby-plugin-sharp": "^4.23.0",
+    "gatsby-plugin-sitemap": "^5.23.0",
     "gatsby-plugin-vanilla-extract": "^2.0.1",
     "gatsby-source-filesystem": "^4.23.0",
     "gatsby-source-sanity": "^7.3.2",
