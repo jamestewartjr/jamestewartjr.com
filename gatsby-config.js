@@ -55,6 +55,32 @@ module.exports = {
         token: process.env.SANITY_READ_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-28338746-1",
+        head: false,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        // pageTransitionDelay: 0,
+        respectDNT: true,
+        // Enables Google Optimize using your container Id
+        //optimizeId: "UA-28338746-1",
+        // Enables Google Optimize Experiment ID
+       // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        //variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Defers execution of google analytics script after page load
+        //defer: false,
+        // Any additional optional fields
+        //sampleRate: 5,
+        //siteSpeedSampleRate: 10,
+        cookieDomain: "jamestewartjr.com",
+        // defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
