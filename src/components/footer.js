@@ -19,7 +19,6 @@ import {
   IconLink,
   VisuallyHidden,
 } from "./ui"
-import BrandLogo from "./brand-logo"
 
 const socialMedia = {
   TWITTER: {
@@ -102,8 +101,7 @@ export default function Footer() {
       <Container>
         <Flex variant="start" responsive>
           <NavLink to="/">
-            <VisuallyHidden>Home</VisuallyHidden>
-            <BrandLogo />
+            Home
           </NavLink>
           <Space />
           <FlexList>

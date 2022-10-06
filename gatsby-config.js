@@ -93,7 +93,7 @@ module.exports = {
         short_name: "James",
         start_url: "/",
         // These can be imported once ESM support lands
-        background_color: "#ffe491",
+        background_color: "#cfe9f9",
         theme_color: "#004ca3",
         icon: "src/favicon.png",
       },
