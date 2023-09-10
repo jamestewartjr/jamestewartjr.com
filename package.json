@@ -1,7 +1,21 @@
 {
   "name": "jamestewartjr.com",
+  "author": "James Stewart <jamestewartjr1@gmail.com>",
+  "description": "Personal website of James Stewart Jr",
   "type": "module",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestewartjr/jamestewartjr.com"
+  },
+  "keywords": [
+    "james stewart jr",
+    "software development",
+    "webpage",
+    "tech",
+    "articles",
+    "blog"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
