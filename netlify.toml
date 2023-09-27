@@ -1,6 +1,3 @@
 [build]
   publish = "dist"
   command = "astro build"
-[build.environment]
-  YARN_VERSION = "1.22.19"
-  NPM_VERSION = "9.6.3"
