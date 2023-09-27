@@ -1,5 +1,6 @@
 [build]
-  publish = "public"
-  command = "npm run build"
+  publish = "dist"
+  command = "astro build"
 [build.environment]
-  YARN_VERSION = "1.7.0"
+  YARN_VERSION = "3.6.0"
+  NPM_VERSION = "9.6.3"
