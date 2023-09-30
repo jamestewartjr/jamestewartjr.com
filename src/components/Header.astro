@@ -1,4 +1,5 @@
 ---
+import Hamburger from './Hamburger.astro'
 import Navigation from './Navigation.astro';
 import { SITE_TITLE } from '../consts';
 ---
@@ -6,6 +7,7 @@ import { SITE_TITLE } from '../consts';
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<Hamburger />
 		<Navigation />
 		<div class="social-links">
 			<a href="https://twitter.com/astrodotbuild" target="_blank">
