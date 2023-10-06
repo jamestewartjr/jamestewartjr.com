@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Welcome	";
+---
+
+<style>
+  body {
+    font-family: Roboto;
+    background-color: #357582;
+  }
+
+  h1 {
+    font-family: Roboto Bold;
+  }
+
+  .header {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .link-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .link {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  .link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .icon-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .icon-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+  }
+
+  .icon-link svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+</style>
+<BaseLayout pageTitle={pageTitle}>
+    <main>
+        <h1>James Stewart Jr.</h1>
+
+        <h2 class="header">Content</h2>
+
+        <ul class="link-list">
+        <li><a href="https://www.youtube.com/@jamestewartjr">YouTube</a></li>
+        </ul>
+    </main>
+</BaseLayout>
