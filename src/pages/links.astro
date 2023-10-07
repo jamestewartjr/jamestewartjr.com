@@ -1,68 +1,68 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Welcome	";
+const title = "James Stewart Jr's Linktree"
+description: "A collection of links to James Stewart Jr's online presence."
 ---
 
-<style>
-  body {
-    font-family: Roboto;
-    background-color: #357582;
-  }
+<head>
+  <title>{title}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #357582;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .link-container {
+      margin-top: 20px;
+    }
+    .link-item {
+      margin-bottom: 10px;
+    }
+    .icon-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .icon-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 24px;
+      color: #ffffff;
+    }
+  </style>
+</head>
 
-  h1 {
-    font-family: Roboto Bold;
-  }
+<body>
+  <h1>James Stewart Jr</h1>
 
-  .header {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
+  <div class="link-container">
+    <h2>Content</h2>
+    <div class="link-item">
+      <a href="https://www.youtube.com/@jamestewartjr">My YouTube</a>
+    </div>
+  </div>
 
-  .link-list {
-    list-style: none;
-    padding: 0;
-  }
+  <div class="link-container">
+    <h2>Links</h2>
+    <div class="link-item">
+      <a href="https://www.jamestewartjr.com/">My site</a>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/jamestewartjr">Code</a>
+    </div>
+  </div>
 
-  .link {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: white;
-  }
-
-  .link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  .icon-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-  }
-
-  .icon-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem;
-    color: white;
-  }
-
-  .icon-link svg {
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.5rem;
-  }
-</style>
-<BaseLayout pageTitle={pageTitle}>
-    <main>
-        <h1>James Stewart Jr.</h1>
-
-        <h2 class="header">Content</h2>
-
-        <ul class="link-list">
-        <li><a href="https://www.youtube.com/@jamestewartjr">YouTube</a></li>
-        </ul>
-    </main>
-</BaseLayout>
+  <div class="icon-links">
+    <a href="https://www.linkedin.com/in/jamestewartjr">LinkedIn</a>
+    <a href="https://github.com/jamestewartjr">GitHub</a>
+    <a href="https://twitter.com/jamestewartjr">Twitter</a>
+    <a href="https://www.youtube.com/@jamestewartjr">YouTube</a>
+  </div>
+</body>
