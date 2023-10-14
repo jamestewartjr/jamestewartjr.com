@@ -9,8 +9,8 @@ export default defineConfig({
 	integrations: [mdx(), sitemap()],
 	pages: {
 		'links.astro': {
-		  title: "James Stewart Jr's Linktree",
-		  description: "A collection of links to James Stewart Jr's online presence.",
+		  title: "James Stewart Jr's Website",
+		  description: "James Stewart Jr's online presence.",
 		},
 	  },
 });
