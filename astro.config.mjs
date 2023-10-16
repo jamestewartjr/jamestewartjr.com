@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://jamestewartjr.com',
+	site: 'https://www.jamestewartjr.com',
 	integrations: [mdx(), sitemap()],
 	pages: {
 		'links.astro': {
