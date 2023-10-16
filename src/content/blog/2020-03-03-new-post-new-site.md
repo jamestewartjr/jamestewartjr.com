@@ -1,7 +1,6 @@
 ---
 title: 'New Blog, New Site'
 pubDate: '2020-03-03T04:04:52.645Z'
-heroImage: '../src/assets/jamesstewartjr.jpg'
 slug: new-blog-new-site
 category: gatsby
 tags:
