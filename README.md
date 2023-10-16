@@ -1,6 +1,6 @@
 # James Stewart Jr.
 
-# I'm a full stack software engineer coding in modern javascript based in Charlotte. This is my little part of the web.
+# I'm a full stack software engineer coding in modern javascript based in Charlotte. This is my part of the web.
 
 ## Connect
 
