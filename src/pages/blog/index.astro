@@ -9,6 +9,8 @@ import FormattedDate from '../../components/FormattedDate.astro';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
+
+const mostRecentPosts = posts.slice().reverse();
 ---
 
 <!doctype html>
@@ -91,7 +93,7 @@ const posts = (await getCollection('blog')).sort(
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
+						mostRecentPosts.map((post) => (
 							<li>
 								<a href={`/blog/${post.slug}/`}>
 									{post.data.heroImage && <img width={720} height={360} src={post.data.heroImage} alt="" />}
