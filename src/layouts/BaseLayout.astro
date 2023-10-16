@@ -20,8 +20,14 @@ const {pageTitle} = Astro.props;
     <h1>{pageTitle}</h1>
     <slot />
     <Footer />
-    {/* <script>
-      import "../scripts/hamburger.js";
-    </script> */}
   </body>
 </html>
+
+<style>
+	h1 {
+    text-align: center;
+    padding-top: 10px;
+		margin: 0;
+		color: rgb(var(--gray));
+	}
+</style>
