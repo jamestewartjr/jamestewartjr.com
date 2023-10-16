@@ -7,16 +7,33 @@ const pageTitle = "Welcome";
 <BaseLayout pageTitle={pageTitle}>
 	<main>
 		<h1>Hi, I'm James!</h1>
+		<div>
+			<img src='../src/assets/jamesstewartjr.jpg' alt="James Stewart Jr" className="avatar" />
+		</div>
 		<p>
-			Welcome. I'm a software engineer, dad, and business owner. This is my part of the web.
+			I'm a software engineer, dad, and business owner. This is my part of the web.
 		</p>
 		<p>
 			Currently, I spend most of time with my family and my business.
 		</p>	
+		<p>
+			More coming soon...
+		</p>	
 
 	</main>
-	{/*<script>
-		import "../scripts/hamburger.js";
-	</script> */}
 </BaseLayout>
+<style>
+	div {
+		display: flex;
+		justify-content: center;
+	}
+	img {
+		text-align: center;
+		margin-bottom: 0;
+		width: 250px;
+		border-radius: 100%;
+		border: 8px solid #018786
+	}
+	 
+</style>
 
