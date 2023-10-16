@@ -1,14 +1,19 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "About Me";
 ---
 
-<Layout
-	title="About Me"
-	description="A little info about James Stewart Jr"
-	pubDate={new Date('September 29 2023')}
->
-	<h2> Current Projects </h2>
-	<p>
-		Currently I'm not looking for new software opportunities. 
-	</p>
-</Layout>
+<BaseLayout pageTitle={pageTitle}>
+	<main>
+		<h3> Current Projects </h3>
+		<p>
+			Currently I'm not looking for new software opportunities. 
+		</p>
+		<h3> More </h3>
+		<p>
+			I'm a Charlotte native and web developer currently working at Lowe's Inc. In my free time, 
+			I spend my time being a dad and experimenting with web3, AI and javascript.
+		</p>	
+
+	</main>
+</BaseLayout>
