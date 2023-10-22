@@ -1,4 +1,3 @@
 User-agent: *
-User-agent: GPTBot
-Disallow: /
+
 sitemap: https://www.jamestewartjr.com/sitemap-0.xml
