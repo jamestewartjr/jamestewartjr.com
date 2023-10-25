@@ -257,3 +257,9 @@ hr {
 	  display: none;
 	}
   }
+
+  .astro-unknown {
+	max-width: 75%;
+	margin: auto;
+	display: block;
+  }
