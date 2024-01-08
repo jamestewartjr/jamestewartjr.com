@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://www.jamestewartjr.com/sitemap-0.xml
