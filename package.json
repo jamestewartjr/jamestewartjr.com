@@ -2,8 +2,8 @@
   "name": "jamestewartjr.com",
   "author": "James Stewart <jamestewartjr1@gmail.com>",
   "description": "Personal website of James Stewart Jr",
-  "type": "module",
-  "version": "0.0.1",
+  "type": "website",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamestewartjr/jamestewartjr.com"
