@@ -5,7 +5,6 @@
 ## Connect
 
 - [Site](https://www.jamestewartjr.com/)
-- [Twitter](https://twitter.com/jamestewartjr/)
 - [GitHub](https://github.com/jamestewartjr/)
 - [LinkedIn](https://linkedin.com/in/jamestewartjr/)
 
