@@ -1,0 +1,60 @@
+---
+import {getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+// export async function getStaticPaths() {
+// 	const posts = await getCollection('blog');
+// 	return posts.map((post) => ({
+// 		params: { slug: post.slug },
+// 		props: post,
+// 	}));
+// }
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+// type Props = CollectionEntry<'blog'>;
+
+const mostRecentPosts = posts.slice().reverse();
+
+---
+
+<div>
+	<h4>Recent Posts</h4>
+    <section>
+        <ul>
+            {
+                mostRecentPosts.map((post) => (
+                <li>
+                    <a href={`/blog/${post.slug}/`}>
+
+                    <div class='recent-post-item'>
+                        <p class="date">
+                            <FormattedDate date={post.data.pubDate} />
+                        </p>
+                        <h5 class="title">{post.data.title}</h5> 
+                    </div> 
+                    </a>
+                </li>
+                ))
+            }
+        </ul>
+    </section>
+</div>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+    ul li * {
+            text-decoration: none;
+
+    }
+    .date {
+        min-width: 120px;
+    }
+    .recent-post-item{
+        display: flex;
+    }
+</style>

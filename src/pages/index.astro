@@ -1,0 +1,41 @@
+---
+import RecentPosts from '../components/RecentPosts.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Welcome";
+
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<main>
+		<h1>Hi, I'm James!</h1>
+		{/*<div>
+			<img src='../src/assets/jamesstewartjr.jpg' alt="James Stewart Jr" class="avatar" />
+		</div> --> */}
+		<p>
+			I'm a software engineer, dad, and business owner. This is my part of the web.
+		</p>
+		<p>
+			Currently, I spend most of time with my family, work and my business.
+		</p>
+		<RecentPosts/>
+		<p>
+			More coming soon...
+		</p>	
+
+	</main>
+</BaseLayout>
+<style>
+	div {
+		display: flex;
+		justify-content: center;
+	}
+	img {
+		text-align: center;
+		margin-bottom: 0;
+		width: 250px;
+		border-radius: 100%;
+		border: 8px solid #018786
+	}
+	 
+</style>
+

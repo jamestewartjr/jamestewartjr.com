@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Oops";
+import { Image } from 'astro:assets';
+import astro404 from '../assets/404astronaut.png'
+
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <h2>I don't know where you are! </h2>
+    <Image
+        class='astro-unknown'
+        alt="Astronaut floating."
+        src={astro404}
+    />
+    <h3>
+        Not sure what you're looking for, but it's not here.
+    </h3>
+
+</BaseLayout>
+
