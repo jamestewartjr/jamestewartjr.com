@@ -8,7 +8,7 @@ export default function About() {
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">Current Projects</h1>
       <p>
-			Currently I'm not looking for new software opportunities. 
+			Currently, I'm not looking for new software opportunities. 
 		</p>
 		<h3> More </h3>
 		<p>
