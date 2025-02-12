@@ -2,8 +2,7 @@
   "name": "jamestewartjr.com",
   "author": "James Stewart <jamestewartjr1@gmail.com>",
   "description": "Personal website of James Stewart Jr",
-  "type": "website",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamestewartjr/jamestewartjr.com"
@@ -17,21 +16,25 @@
     "blog"
   ],
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "start": "next dev",
+    "build": "next build"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.0.3",
-    "@astrojs/react": "^3.0.3",
-    "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.0",
+    "@tailwindcss/postcss": "4.0.0-alpha.13",
+    "@types/node": "20.11.17",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
-    "astro": "^3.0.12",
+    "@vercel/analytics": "^1.1.3",
+    "@vercel/speed-insights": "^1.0.9",
+    "geist": "1.2.2",
+    "next": "^14.2.24",
+    "next-mdx-remote": "^4.4.1",
+    "postcss": "^8.4.35",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sugar-high": "^0.6.0",
+    "tailwindcss": "4.0.0-alpha.13",
+    "typescript": "5.3.3"
   }
 }
