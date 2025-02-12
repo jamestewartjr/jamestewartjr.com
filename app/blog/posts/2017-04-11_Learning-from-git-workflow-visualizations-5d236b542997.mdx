@@ -28,7 +28,7 @@ I think it’s interesting that I check the status most often with its typing er
 
 If you plan on using the visualizer, here are the steps I used.
 
-history | awk ‘$2 == “git” {print $1 “ “ $3}’ > history.txt
+```shell history | awk ‘$2 == “git” {print $1 “ “ $3}’ > history.txt```
 
 1.  Run the command in your terminal. It reads your bash history, compares that history for the ‘git’ string. Taking the field after git (log, status, etc) and posts that to a file. In this case, history.txt. You can change that file name to any file name you want.
 2.  Open the file.
