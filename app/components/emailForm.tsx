@@ -37,7 +37,7 @@ const EmailForm = (props) => {
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
     const [message, setMessage] = useState('')
 
-    const [title] = props
+    const {title} = props
   
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -68,7 +68,7 @@ const EmailForm = (props) => {
       }
 
     return (
-	<Form.Root className="w-[260px]" onSubmit={handleSubmit}>
+	<Form.Root className="mt-8 w-[260px]" onSubmit={handleSubmit}>
 		<div className="flex flex-col space-y-1">
           <label htmlFor="email" className="text-sm font-medium text-gray-700 dark:text-gray-200">
             {title || 'Join my newsletter'}
