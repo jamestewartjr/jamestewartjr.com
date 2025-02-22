@@ -5,7 +5,7 @@ const BEEHIIV_PUBLICATION_ID = process.env.BEEHIIV_PUBLICATION_ID
 
 export async function POST(req: Request) {
   try {
-    const { email } = await req.json()
+    const { email, custom_fields } = await req.json()
 
     if (!email) {
       return NextResponse.json(
@@ -28,6 +28,8 @@ export async function POST(req: Request) {
           send_welcome_email: true,
           utm_source: 'website',
           utm_medium: 'organic',
+          custom_fields,
+          referring_site: 'jamestewartjr.com'
         }),
       }
     )
