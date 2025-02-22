@@ -32,10 +32,12 @@ import { Form } from "radix-ui";
  *    - Test welcome email flow
  */
 
-const EmailForm = () => {
+const EmailForm = (props) => {
     const [email, setEmail] = useState('')
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
     const [message, setMessage] = useState('')
+
+    const [title] = props
   
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -69,20 +71,21 @@ const EmailForm = () => {
 	<Form.Root className="w-[260px]" onSubmit={handleSubmit}>
 		<div className="flex flex-col space-y-1">
           <label htmlFor="email" className="text-sm font-medium text-gray-700 dark:text-gray-200">
-            Subscribe to my newsletter
+            {title || 'Join my newsletter'}
           </label>
+          <div className="flex space-x-[6px]">
+
           <input
             id="email"
             name="email"
             type="email"
             placeholder="you@example.com"
             required
-            className="rounded-md border border-gray-300 px-4 py-2 dark:border-gray-700 dark:bg-gray-800"
+            className="flex-1 rounded-md border border-gray-300 px-4 py-2 dark:border-gray-700 dark:bg-gray-800"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={status === 'loading'}
           />
-        </div>
         <Form.Submit asChild>
             <button
             type="submit"
@@ -92,6 +95,9 @@ const EmailForm = () => {
             {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
             </button>
         </Form.Submit>
+        </div>
+        </div>
+
         {message && (
           <p className={`text-sm ${status === 'error' ? 'text-red-500' : 'text-green-500'}`}>
             {message}
