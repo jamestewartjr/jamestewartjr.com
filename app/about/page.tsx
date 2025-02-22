@@ -17,7 +17,7 @@ export default function About() {
 			I'm a Charlotte native and web developer currently working at Lowe's Inc. In my free time, 
 			I spend my time being a dad and experimenting with web3, AI and javascript.
 		</p>	
-		<EmailForm/>
+		<EmailForm page="about"/>
     </section>
   )
 }

@@ -37,7 +37,9 @@ const EmailForm = (props) => {
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
     const [message, setMessage] = useState('')
 
-    const {title} = props
+    const {title, page} = props
+
+    const customField =  [{"name": "page","value": page}]
   
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -49,7 +51,7 @@ const EmailForm = (props) => {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email }),
+            body: JSON.stringify({ email,"custom_fields": customField }),
           })
     
           const data = await res.json()
