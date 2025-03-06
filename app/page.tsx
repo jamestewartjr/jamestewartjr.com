@@ -12,7 +12,7 @@ export default function Page() {
           Currently, I spend most of time with my family and my business.`}
       </p>
       <div className="my-8">
-        <BlogPosts />
+        <BlogPosts limit={5} />
       </div>
       <EmailForm page="home"/>
 
