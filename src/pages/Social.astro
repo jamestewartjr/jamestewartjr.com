@@ -1,4 +1,8 @@
 ---
+const { icon, username } = Astro.props;
+
+
+---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
@@ -45,3 +49,24 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+---
+ { /*<a href={`https://www.${platform}.com/${username}`}>{platform}</a> -->
+
+
+<!-- <div class="mt-5 flex justify-center space-x-2">
+    {
+        socials.map((social: any) => (
+            <Icon 
+                icon={social.frontmatter.icon}
+                username={social.frontmatter.username}
+            />
+        ))
+    }
+</div> --> */ }
+<div class="mt-5 flex justify-center space-x-2">
+    <Icon 
+        icon={icon}
+        username={username}
+    />
+</div> 
