@@ -3,6 +3,7 @@ import EmailForm from "app/components/email-form"
 export const metadata = {
 	title: 'About',
 	description: 'About James Stewart Jr',
+	image: '/images/jamestewartjr.jpg',
 }
 
 export default function About() {
@@ -12,10 +13,10 @@ export default function About() {
     	<p>
 			Currently, I'm not looking for new software opportunities. 
 		</p>
-		<h3> More </h3>
+		<br />
 		<p>
 			I'm a Charlotte native and web developer currently working at Lowe's Inc. In my free time, 
-			I spend my time being a dad and experimenting with web3, AI and javascript.
+			I spend my time being a dad and experimenting with AI and entrepreneurship.
 		</p>	
 		<EmailForm page="about"/>
     </section>

@@ -19,7 +19,7 @@ const NotFound = () => {
         <div className="my-8">
           <BlogPosts limit={3} />
         </div>
-        <EmailForm title="Or join my email newsletter" page="404_page"/>
+        <EmailForm title="Or join my email newsletter" page="404"/>
       </section>
   )
 }
