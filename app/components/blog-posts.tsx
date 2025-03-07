@@ -12,7 +12,7 @@ function truncateSummary(text?: string, maxLength: number = 180) {
   return text.slice(0, maxLength).trim() + '...'
 }
 
-export function BlogPosts({ showSummaries = false, limit }: BlogPostsProps) {
+export default function BlogPosts({ showSummaries = false, limit }: BlogPostsProps) {
   let allBlogs = getBlogPosts()
 
   const sortedPosts = allBlogs.sort((a, b) => {
