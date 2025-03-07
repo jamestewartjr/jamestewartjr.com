@@ -1,5 +1,5 @@
-import { BlogPosts } from 'app/components/posts'
-import EmailForm from 'app/components/emailForm'
+import BlogPosts from 'app/components/blog-posts'
+import EmailForm from 'app/components/email-form'
 
 export default function Page() {
   return (

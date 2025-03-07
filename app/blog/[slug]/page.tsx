@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
-import EmailForm from 'app/components/emailForm'
+import EmailForm from 'app/components/email-form'
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()

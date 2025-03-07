@@ -7,24 +7,14 @@ import { Form } from "radix-ui";
  * TODO: Email Form Implementation
  * 1. Add form state management
  *    - Loading state during submission
- *    - Success/Error messages
  *    - Form validation
  * 
  * 2. Update subscribe button styling
  *    - Match site theme
- *    - Add hover effects
- *    - Add loading animation
  * 
- * 3. Get API credentials from Beehiiv
- *    - Generate API key
- *    - Get publication ID
- *    - Add to environment variables
- * 
- * 4. Test the subscription flow
- *    - Test with valid email
+ * 3. Test the subscription flow
  *    - Test with invalid email
  *    - Test error handling
- *    - Test success flow
  * 
  * 5. Create welcome email automation
  *    - Set up welcome email template in Beehiiv

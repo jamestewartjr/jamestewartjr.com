@@ -1,4 +1,4 @@
-import EmailForm from "app/components/emailForm"
+import EmailForm from "app/components/email-form"
 
 export const metadata = {
 	title: 'About',
