@@ -2,6 +2,12 @@ import Image from 'next/image'
 import BlogPosts from 'app/components/blog-posts'
 import EmailForm from 'app/components/email-form'
 
+export const metadata = {
+	title: 'Not Found',
+	description: 'Where are you going? Unknown page on James Stewart Jr site',
+	image: '/images/404astronaut.png',
+}
+
 const NotFound = () => {
   return (
     <section>
