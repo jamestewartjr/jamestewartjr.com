@@ -11,17 +11,24 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'James Stewart Jr Site',
-    template: '%s | James Stewart Jr Site',
+    default: 'James Stewart Jr: Software Engineer/Entrepreneur',
+    template: '%s | James Stewart Jr: Software Engineer/Entrepreneur',
   },
-  description: 'This is my home.',
+  description: 'Software Engineer, AI Builder, and Entrepreneur sharing my learnings and experiences.',
   openGraph: {
-    title: 'My home site',
-    description: 'Welcome to my website!',
+    title: 'James Stewart Jr - Software Engineer/Entrepreneur',
+    description: 'Software Engineer, AI Builder, and Entrepreneur sharing my learnings and experiences.',
     url: baseUrl,
-    siteName: 'My home site',
+    siteName: 'The home of James Stewart Jr',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/james_render_23.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   robots: {
     index: true,
