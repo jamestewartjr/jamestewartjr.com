@@ -18,11 +18,14 @@
   "scripts": {
     "dev": "next dev",
     "start": "next dev",
-    "build": "next build"
+    "build": "next build",
+    "test": "jest"
   },
   "dependencies": {
     "@radix-ui/themes": "^3.2.0",
     "@tailwindcss/postcss": "4.0.0-alpha.13",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
     "@types/node": "20.11.17",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
@@ -34,6 +37,7 @@
     "postcss": "^8.4.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "sugar-high": "^0.6.0",
     "tailwindcss": "4.0.0-alpha.13",
     "typescript": "5.3.3"

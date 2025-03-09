@@ -1,5 +1,6 @@
 import BlogPosts from 'app/components/blog-posts'
 import EmailForm from 'app/components/email-form'
+import { SocialLinks } from './components/social-links'
 
 export default function Page() {
   return (
@@ -11,6 +12,7 @@ export default function Page() {
         {`	I'm a software engineer, dad, and business owner. This is my part of the web.
           Currently, I spend most of time with my family and my business.`}
       </p>
+      <SocialLinks />
       <div className="my-8">
         <BlogPosts limit={5} />
       </div>
