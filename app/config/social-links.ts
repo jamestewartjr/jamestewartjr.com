@@ -11,20 +11,20 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
     {
-        friendlyName: "Github",
-        link: `https://github.com/jamestewartjr`,
-        Icon: FaGithub,
-        isWebmention: true,
-    },
-    {
         friendlyName: "LinkedIn",
         link: `https://www.linkedin.com/in/jamestewartjr`,
         Icon: FaLinkedin,
         isWebmention: true,
     },
     {
+        friendlyName: "Github",
+        link: `https://github.com/jamestewartjr`,
+        Icon: FaGithub,
+        isWebmention: true,
+    },
+    {
         friendlyName: "Blog",
-        link: "https://www.jamestewartjr.com",
+        link: "https://www.jamestewartjr.com/blog",
         Icon: FaNewspaper,
         isWebmention: true,
     },
