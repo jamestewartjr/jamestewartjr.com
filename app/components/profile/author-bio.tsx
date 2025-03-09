@@ -6,12 +6,8 @@ const AuthorBio = () => {
       <p className="text-2xl text-gray-400 mb-6">Charlotte, NC</p>
 
       <div className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-        <p className="mb-4">Software engineer, dad, and business owner.</p>
-        <p className="text-gray-400 leading-relaxed">
-          Currently, I spend my time with my family and my business. I enjoy building products that help people.
-        </p>
+        <p className="mb-4">Software engineer, dad, and business owner. I enjoy building products that help people.</p>
       </div>
-
     </div>
   )
 }

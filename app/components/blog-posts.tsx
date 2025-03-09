@@ -25,28 +25,22 @@ export default function BlogPosts({ showSummaries = false, limit }: BlogPostsPro
   const displayPosts = limit ? sortedPosts.slice(0, limit) : sortedPosts
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="w-full space-y-8 mb-8">
       {displayPosts.map((post) => (
-        <Link
+        <Link 
           key={post.slug}
-          className="flex flex-col"
           href={`/blog/${post.slug}`}
+          className="block text-left hover:opacity-80 transition-opacity"
         >
-          <div className="w-full flex flex-col md:flex-row md:space-x-2">
-            <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
-              {formatDate(post.metadata.publishedAt, false)}
+          <p className="text-xl text-gray-400 mb-2">{formatDate(post.metadata.publishedAt, false)}</p>
+          <h2 className="text-2xl text-white font-normal leading-tight">
+            {post.metadata.title}
+          </h2>
+          {showSummaries && post.metadata.summary && (
+            <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">
+              {truncateSummary(post.metadata.summary)}
             </p>
-            <div className="flex flex-col">
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {post.metadata.title}
-              </p>
-              {showSummaries && post.metadata.summary && (
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">
-                  {truncateSummary(post.metadata.summary)}
-                </p>
-              )}
-            </div>
-          </div>
+          )}
         </Link>
       ))}
     </div>
