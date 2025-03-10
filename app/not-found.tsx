@@ -5,7 +5,21 @@ import EmailForm from 'app/components/email-form'
 export const metadata = {
 	title: 'Not Found',
 	description: 'Where are you going? Unknown page on James Stewart Jr site',
-	image: '/images/404astronaut.png',
+	openGraph: {
+		title: 'Not Found',
+		description: 'Where are you going? Unknown page on James Stewart Jr site',
+		images: [
+			{
+				url: '/images/404astronaut.png',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Not Found',
+		description: 'Where are you going? Unknown page on James Stewart Jr site',
+		images: ['/images/404astronaut.png'],
+	},
 }
 
 const NotFound = () => {
