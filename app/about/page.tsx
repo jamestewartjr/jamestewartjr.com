@@ -3,7 +3,21 @@ import EmailForm from "app/components/email-form"
 export const metadata = {
 	title: 'About',
 	description: 'About James Stewart Jr',
-	image: '/images/jamestewartjr.jpg',
+	openGraph: {
+		title: 'About Page',
+		description: 'About James Stewart Jr',
+		images: [
+			{
+				url: '/images/jamestewartjr.jpg',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'About Page',
+		description: 'About James Stewart Jr',
+		images: ['/images/jamestewartjr.jpg'],
+	},
 }
 
 export default function About() {
