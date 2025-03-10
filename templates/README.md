@@ -22,6 +22,7 @@ This directory contains templates for creating new blog posts. These templates a
 - `keywords`: Array of relevant keywords
 - `slug`: URL-friendly version of title
 - `publishedAt`: Publication date (YYYY-MM-DD)
+- `image`: Path to the Open Graph image for social media previews
 
 ## Code Blocks Example
 
