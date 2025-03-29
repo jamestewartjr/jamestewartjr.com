@@ -3,9 +3,9 @@ const nextConfig = {
   // ... other config options
   
   // Disable Vercel Speed Insights
-  speedInsights: {
-    enabled: false,
-  },
+  // speedInsights: {
+  //   enabled: false,
+  // },
 }
 
 module.exports = nextConfig 
