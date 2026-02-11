@@ -2,6 +2,10 @@
 
 # I'm a full stack software engineer coding in modern javascript based in Charlotte. This is my part of the web.
 
+## Requirements
+
+- **Node.js** 22 or higher (see `engines` in `package.json`)
+
 ## Connect
 
 - [Site](https://www.jamestewartjr.com/)
