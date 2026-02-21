@@ -64,3 +64,15 @@ Slug and metadata are derived from filenames and frontmatter in `app/blog/utils.
 ---
 
 *AGENTS.md is living documentation; update it when project structure, commands, or conventions change.*
+
+<!-- project-initializer:navigation:start -->
+## Navigation Index
+- System map
+  - `docs/ARCHITECTURE.MD`
+- Planning artifacts
+  - `docs/plans/README.md`
+- Plan lifecycle automation
+  - `scripts/complete-plan.sh`
+- Git commit safety skill
+  - `skills/create-git-commit/SKILL.md` (`skill://create-git-commit`)
+<!-- project-initializer:navigation:end -->
