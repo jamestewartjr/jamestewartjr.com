@@ -6,4 +6,5 @@
 - Include `Date:` and `Status:` fields in each plan.
 - Prefer the latest active plan first.
 - Complete implemented plans with `bash scripts/complete-plan.sh docs/plans/active/<YYYY-MM-DD-slug>.md`.
+- Optional alias: `npm run plan:complete -- docs/plans/active/<YYYY-MM-DD-slug>.md`.
 - Validate plan changes with `npm run lint`, `npm run test:functions`, and `npm test`.

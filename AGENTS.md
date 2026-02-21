@@ -4,7 +4,7 @@ Guidance for coding agents working in this repository.
 
 ## Project overview
 
-Personal site and blog for James Stewart Jr. (jamestewartjr.com). Built with **Next.js 16** (App Router), **React 19**, **TypeScript**, **Tailwind CSS 4**, and **MDX** for blog posts. Requires **Node.js 22+** (see `package.json` `engines`). Hosted on Vercel with Analytics and Speed Insights.
+Personal site and blog for James Stewart Jr. (jamestewartjr.com). Built with **Next.js 16** (App Router), **React 19**, **TypeScript**, **Tailwind CSS 4**, and **MDX** for blog posts. Requires **Node.js 24+** (see `package.json` `engines`). Hosted on Vercel with Analytics and Speed Insights.
 
 - **App**: `app/` — pages, layouts, API routes, blog, components, config.
 - **Blog**: `app/blog/` — blog index, `[slug]` dynamic route, MDX in `app/blog/posts/`.
@@ -18,6 +18,7 @@ Personal site and blog for James Stewart Jr. (jamestewartjr.com). Built with **N
 - **Build**: `npm run build` — production build
 - **Lint**: `npm run lint` — ESLint CLI (`eslint.config.mjs`)
 - **Start**: `npm run start` — same as dev (runs `next dev`)
+- **Plan completion helper**: `npm run plan:complete -- docs/plans/active/<YYYY-MM-DD-slug>.md`
 
 Use **npm** (this repo uses `package.json` + `package-lock.json`, not pnpm/yarn).
 

@@ -21,7 +21,7 @@ Primary runtime and content layers:
 - The blog index and per-post pages depend on the filename/frontmatter contract.
 
 ## Operational Invariants
-- Node runtime requirement is `>=22` (see `package.json`).
+- Node runtime requirement is `>=24` (see `package.json`).
 - Package manager is `npm` with lockfile source of truth (`package-lock.json`).
 - Baseline verification commands:
   - `npm run lint`

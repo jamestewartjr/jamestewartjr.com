@@ -22,7 +22,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest",
-    "test:functions": "jest --passWithNoTests app/api"
+    "test:functions": "jest --passWithNoTests app/api",
+    "plan:complete": "bash scripts/complete-plan.sh"
   },
   "dependencies": {
     "@radix-ui/themes": "^3.2.1",
@@ -47,7 +48,10 @@
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
+  },
+  "overrides": {
+    "minimatch": "10.2.1"
   },
   "devDependencies": {
     "eslint": "^9.39.2",
