@@ -51,7 +51,7 @@ Slug and metadata are derived from filenames and frontmatter in `app/blog/utils.
 
 ## Docs and design
 
-- **Design docs**: `docs/` — e.g. `social_links_design.md`, `mobile_profile_design.md`, `google-analytics-integration.md`. Check these before changing related features.
+- **Design docs**: `docs/` — e.g. `docs/plans/active/2026-02-21-social-links-design.md`, `docs/plans/active/2026-02-21-mobile-profile-design.md`, `google-analytics-integration.md`. Check these before changing related features.
 
 ## Security and deployment
 
