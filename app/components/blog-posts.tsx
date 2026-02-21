@@ -13,7 +13,7 @@ function truncateSummary(text?: string, maxLength: number = 180) {
 }
 
 export default function BlogPosts({ showSummaries = false, limit }: BlogPostsProps) {
-  let allBlogs = getBlogPosts()
+  const allBlogs = getBlogPosts()
 
   const sortedPosts = allBlogs.sort((a, b) => {
     if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {

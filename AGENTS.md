@@ -4,7 +4,7 @@ Guidance for coding agents working in this repository.
 
 ## Project overview
 
-Personal site and blog for James Stewart Jr. (jamestewartjr.com). Built with **Next.js 16** (App Router), **React 19**, **TypeScript**, **Tailwind CSS 4**, and **MDX** for blog posts. Requires **Node.js 22+** (see `package.json` `engines`). Hosted on Vercel with Analytics and Speed Insights.
+Personal site and blog for James Stewart Jr. (jamestewartjr.com). Built with **Next.js 16** (App Router), **React 19**, **TypeScript**, **Tailwind CSS 4**, and **MDX** for blog posts. Requires **Node.js 24+** (see `package.json` `engines`). Hosted on Vercel with Analytics and Speed Insights.
 
 - **App**: `app/` — pages, layouts, API routes, blog, components, config.
 - **Blog**: `app/blog/` — blog index, `[slug]` dynamic route, MDX in `app/blog/posts/`.
@@ -16,13 +16,16 @@ Personal site and blog for James Stewart Jr. (jamestewartjr.com). Built with **N
 - **Install**: `npm install`
 - **Dev**: `npm run dev` — Next.js dev server (Turbopack default in Next 16)
 - **Build**: `npm run build` — production build
+- **Lint**: `npm run lint` — ESLint CLI (`eslint.config.mjs`)
 - **Start**: `npm run start` — same as dev (runs `next dev`)
+- **Plan completion helper**: `npm run plan:complete -- docs/plans/active/<YYYY-MM-DD-slug>.md`
 
 Use **npm** (this repo uses `package.json` + `package-lock.json`, not pnpm/yarn).
 
 ## Testing instructions
 
 - **Run tests**: `npm test` (runs Jest).
+- **Functions baseline**: `npm run test:functions` (currently `--passWithNoTests` for `app/api` paths).
 - **Test location**: Component tests live under `app/components/__tests__/` (e.g. `social-links.test.tsx`). Stack: Jest + React Testing Library + `@testing-library/jest-dom`.
 - **Before finishing**: Run the test suite and fix any failures.
 - **When changing code**: Add or update tests for the code you change. Prefer Testing Library patterns (queries by role/label, avoid implementation details).
@@ -48,7 +51,7 @@ Slug and metadata are derived from filenames and frontmatter in `app/blog/utils.
 
 ## Docs and design
 
-- **Design docs**: `docs/` — e.g. `social_links_design.md`, `mobile_profile_design.md`, `google-analytics-integration.md`. Check these before changing related features.
+- **Design docs**: `docs/` — e.g. `docs/plans/active/2026-02-21-social-links-design.md`, `docs/plans/active/2026-02-21-mobile-profile-design.md`, `google-analytics-integration.md`. Check these before changing related features.
 
 ## Security and deployment
 
@@ -64,3 +67,15 @@ Slug and metadata are derived from filenames and frontmatter in `app/blog/utils.
 ---
 
 *AGENTS.md is living documentation; update it when project structure, commands, or conventions change.*
+
+<!-- project-initializer:navigation:start -->
+## Navigation Index
+- System map
+  - `docs/ARCHITECTURE.MD`
+- Planning artifacts
+  - `docs/plans/README.md`
+- Plan lifecycle automation
+  - `scripts/complete-plan.sh`
+- Git commit safety skill
+  - `skills/create-git-commit/SKILL.md` (`skill://create-git-commit`)
+<!-- project-initializer:navigation:end -->

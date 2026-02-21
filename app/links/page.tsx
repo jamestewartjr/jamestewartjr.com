@@ -1,5 +1,4 @@
 import { type Metadata } from 'next'
-import { type FC } from 'react'
 import ProfileImage from '../components/profile/profile-image'
 import AuthorBio from '../components/profile/author-bio'
 import { SocialLinks } from '../components/social-links'

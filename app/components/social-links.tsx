@@ -1,5 +1,4 @@
 import { socialLinks } from '../config/social-links';
-import Link from "next/link"
 
 interface SocialLinksProps {
     className?: string;
