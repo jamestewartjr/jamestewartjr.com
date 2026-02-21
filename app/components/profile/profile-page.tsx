@@ -9,7 +9,7 @@ interface ProfilePageProps {
 
 const ProfilePage: FC<ProfilePageProps> = ({ className = '' }) => {
   return (
-    <main className="min-h-screen bg-black px-4 py-8 md:py-12" aria-label="Social Links Profile">
+    <main className={`min-h-screen bg-black px-4 py-8 md:py-12 ${className}`} aria-label="Social Links Profile">
       <div className="mx-auto max-w-2xl">
         <div className="flex flex-col items-center">
           <ProfileImage />
