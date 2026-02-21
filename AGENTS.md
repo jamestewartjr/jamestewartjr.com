@@ -16,6 +16,7 @@ Personal site and blog for James Stewart Jr. (jamestewartjr.com). Built with **N
 - **Install**: `npm install`
 - **Dev**: `npm run dev` — Next.js dev server (Turbopack default in Next 16)
 - **Build**: `npm run build` — production build
+- **Lint**: `npm run lint` — ESLint CLI (`eslint.config.mjs`)
 - **Start**: `npm run start` — same as dev (runs `next dev`)
 
 Use **npm** (this repo uses `package.json` + `package-lock.json`, not pnpm/yarn).
@@ -23,6 +24,7 @@ Use **npm** (this repo uses `package.json` + `package-lock.json`, not pnpm/yarn)
 ## Testing instructions
 
 - **Run tests**: `npm test` (runs Jest).
+- **Functions baseline**: `npm run test:functions` (currently `--passWithNoTests` for `app/api` paths).
 - **Test location**: Component tests live under `app/components/__tests__/` (e.g. `social-links.test.tsx`). Stack: Jest + React Testing Library + `@testing-library/jest-dom`.
 - **Before finishing**: Run the test suite and fix any failures.
 - **When changing code**: Add or update tests for the code you change. Prefer Testing Library patterns (queries by role/label, avoid implementation details).
